@@ -51,6 +51,18 @@
 
 %%% END Article customizations
 
+\usepackage{hyperref}
+
+\newcommand{\move}[6]{
+\subsection{#1}
+When you \textbf{#2}, Roll+#3
+\begin{itemize}
+\item On a 10+, #4
+\item On a 7--9, #5
+\item On a 6 or less, #6
+\end{itemize}
+}
+
 %%% The "real" document content comes below...
 
 \title{\scshape Mecha World\\
