@@ -21,7 +21,7 @@
 
 \usepackage{graphicx} % support the \includegraphics command and options
 
-% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
 
 %%% PACKAGES
 \usepackage{booktabs} % for much better looking tables
@@ -53,9 +53,12 @@
 
 \usepackage{hyperref}
 
-\newcommand{\move}[6]{
+\newcommand{\movedesc}[3]{
 \subsubsection{#1}
-When you \textbf{#2}, Roll+#3
+When you \textbf{#2}, #3}
+
+\newcommand{\move}[6]{
+\movedesc{#1}{#2}{Roll +#3}
 \begin{itemize}
 \item On a 10+, #4
 \item On a 7--9, #5
