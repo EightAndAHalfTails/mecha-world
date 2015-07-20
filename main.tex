@@ -57,13 +57,27 @@
 \subsubsection{#1}
 When you \textbf{#2}, #3}
 
+\newcommand{\rollresnofail}[2]{
+\begin{itemize}
+\item On a 10+, #1
+\item On a 7--9, #2
+\end{itemize}}
+
+\newcommand{\rollres}[3]{
+\begin{itemize}
+\item On a 10+, #1
+\item On a 7--9, #2
+\item On a 6 or less, #3
+\end{itemize}}
+
 \newcommand{\move}[6]{
 \movedesc{#1}{#2}{Roll +#3}
-\begin{itemize}
-\item On a 10+, #4
-\item On a 7--9, #5
-\item On a 6 or less, #6
-\end{itemize}
+\rollres{#4}{#5}{#6}
+}
+
+\newcommand{\movenofail}[5]{
+\movedesc{#1}{#2}{Roll +#3}
+\rollresnofail{#4}{#5}
 }
 
 %%% The "real" document content comes below...
