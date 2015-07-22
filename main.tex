@@ -1,12 +1,9 @@
-% !TEX TS-program = pdflatex
-% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = xelatex
 
 % This is a simple template for a LaTeX document using the "article" class.
 % See "book", "report", "letter" for other types of document.
 
 \documentclass[11pt]{article} % use larger type; default would be 10pt
-
-\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
 
 %%% Examples of Article customizations
 % These packages are optional, depending whether you want the features they provide.
@@ -51,7 +48,17 @@
 
 %%% END Article customizations
 
+% Hyperlinks, URLs etc.
 \usepackage{hyperref}
+\usepackage{url}
+\hypersetup{
+    colorlinks=true,
+    citecolor=black,
+    urlcolor=black,
+    linkcolor=black,
+    pagecolor=black,
+    anchorcolor=black
+}
 
 \newcommand{\movedesc}[3]{
 \subsubsection{#1}
@@ -79,6 +86,9 @@ When you \textbf{#2}, #3}
 \movedesc{#1}{#2}{Roll +#3}
 \rollresnofail{#4}{#5}
 }
+
+\usepackage{fontspec}
+\newcommand{\money}{{\fontspec{Batang}万}}
 
 %%% The "real" document content comes below...
 
