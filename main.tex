@@ -88,7 +88,11 @@ When you \textbf{#2}, #3}
 }
 
 \usepackage{fontspec}
-\newcommand{\money}{{\fontspec{Batang}万}}
+\usepackage[fallback]{xeCJK}
+\setmainfont{PT Serif}
+\setCJKmainfont{HanaMinA}
+
+\newcommand{\money}{万}
 
 %%% The "real" document content comes below...
 
