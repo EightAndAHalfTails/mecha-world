@@ -936,18 +936,92 @@ When you inflict damage with the Compensator, gain 1 balance. You can spend bala
 {the cloud only has enough processing power to handle one task, repair or destuction. Choose which one.}
 {most of the cloud malfunction and self-destruct, but a small portion go haywire, repairing enemies and dismantling allies.}
 
-%\subsection{Class Name}
-%{\itshape}
-%\subsubsection{Look}
-%Choose one for each:
-%\subsubsection{Stats}
-%Choose one set:
-%\begin{itemize}
-%\setlength\itemsep{0em}
-%\item Cool=0 Talk=0 Hard=0 Fast=0 Tech=0 Plan=0
-%\item Cool=0 Talk=0 Hard=0 Fast=0 Tech=0 Plan=0
-%\item Cool=0 Talk=0 Hard=0 Fast=0 Tech=0 Plan=0
-%\item Cool=0 Talk=0 Hard=0 Fast=0 Tech=0 Plan=0
-%\end{itemize}
-%Your Max Health and Max Load are both 6+Hard.
-%\subsubsection{Equipment}
+\subsection{Tactician}
+{\itshape How do you see the battlefield? Not just as the chaos of
+  gunfire and explosions, but as something more\ldots concerted. You
+  see the intention behind every bullet, the desperation behind every
+  swing. When you look into the eyes of your enemies, you see their
+  plans, motives, and weaknesses laid bare.
+
+When you turn those eyes upon your friends, what do you see? Do you
+reduce them in your mind down to a list of strengths and weaknesses,
+opportunities and threats? They each have their part to play in your
+plan. Let's hope you haven't missed anything.}
+\subsubsection{Look}
+Choose one for each:
+Determined Eyes, Calculating Eyes, or Bored Eyes.
+
+Neat Hair, Messy Hair, or Styled Hair.
+
+Military Garb, Casual Clothes, or Formal Wear
+
+\subsubsection{Stats}
+Choose one set:
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Cool=0 Talk+2 Hard-1 Fast-1 Tech=0 Plan+2
+\item Cool=0 Talk+1 Hard=0 Fast-2 Tech+2 Plan+2
+\item Cool+1 Talk+1 Hard-1 Fast=0 Tech=0 Plan+2
+\item Cool+1 Talk=0 Hard=0 Fast-1 Tech+1 Plan+2
+\end{itemize}
+Your Max Health and Max Load are both 4+Hard.
+
+\subsubsection{Bodyguard}
+You have a bodyguard: a loyal protector who will serve you to the death. Name them and give them a one-line description.
+
+Choose a base:
+\begin{itemize}
+\item Training +2, Cunning +1, 1 Armour, Humanity +1
+\item Training +2, Cunning +2, 0 Armour, Humanity +1
+\item Training +1, Cunning +2, 1 Armour, Humanity +1
+\item Training +3, Cunning +1, 1 Armour, Humanity +2
+\end{itemize}
+
+Choose as many strengths as their Training:
+
+\textit{Fast, burly, calm, intimidating, perceptive, stealthy, ferocious.}
+
+Your bodyguard protects you from attackers. Choose as many additional trainings as their Cunning:
+
+\textit{Search, scout, guard, gather information, repair, work for money, teach.}
+
+Choose as many weaknesses as their Humanity:
+
+\textit{Cowardly, insane, scarred, oblivious, ambitious, stubborn, lame.}
+
+\subsubsection{Command}
+As well as protecting you from attackers, your bodyguard can also attack targets for you. When you \textbf{use your bodyguard as a weapon}, choose an appropriate combat move and Roll+Cunning instead of whatever that move demands. Your bodyguard deals damage equal to their Training.
+
+Otherwise, when you work with your bodyguard on something they're trained in:
+\begin{itemize}
+\item and you attack the same target, add their Training to your damage.
+\item and you take damage, add their armour to your armour.
+\item and you Defy, add their cunning to your roll.
+\end{itemize}
+
+\move{Best-Laid Plans}{start the session}{Plan}{hold 3}{hold 2}{hold 1, plus whatever the GM says when you spend it}
+
+You may spend your hold 1-for-1 at any time during the session to have one of the following effects occur, either because you planned it or by pure luck:
+\begin{itemize}
+\item One weapon is disabled or broken.
+\item One object explodes.
+\item You come across a needed item.
+\end{itemize}
+
+\movenofail{Mission Briefing}{explain your plan to the other players}{Talk, describing up to 3 details.}{the plan is foolproof, and fills your comerades with hope: everyone present takes +1 forward now, and again when sticking to the plan.}{the plan is sound: everyone present takes +1 when sticking to it.}
+
+\subsubsection{Equipment}
+You get:
+\begin{itemize}
+\item Service Pistol (2-harm, hand, close, semi-auto, loud, 1 weight) 
+\item 1 Tech Item (1 weight)
+\item 1 Explosives Kit (3 uses, 1 weight)
+\item 3 Tactical Grenades (0 weight)
+\end{itemize}
+
+\subsubsection{Mecha Signature Weapon: Pods}
+Your mecha is equipped with six autonomous attack drones known as ``Pods''. Each has a burst-fire weapon (1-harm, close, full-auto, 0 weight) and 1 HP. You can command the pods to attack in unison, or assist allies. If you \textbf{use a Pod to try to shoot down an incoming Guided Missile}, Roll+Plan:
+\rollresnofail{you succesfully destroy the incoming missile}{the missile is shot down, but the Pod is destroyed in the attempt}
+
+\subsubsection{Mecha Special Ability: Farsight}
+Your mecha is equipped with impressive visual systems. You can see in all electromagnetic spectra, as well as seeing any objects visible with the naked eye as though they were right in front of you.
