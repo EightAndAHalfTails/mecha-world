@@ -14,18 +14,79 @@ be detailed here.
 \movenofail{Brawl}{trade blows or blades with someone}{Hard}
 {deal your damage to the enemy and choose one:
 \begin{itemize}
-\item Force the enemy into a nearby danger
+\item Deal an extra 1-harm or force the enemy into a nearby danger
 \item Avoid a counterattack
 \end{itemize}}
 {deal your damage to the enemy but receive a counterattack}
 
-\movenofail{Flourish}{execute a fancy combat technique}{Fast}
+Brawl is for dealing with ruffians in melee when diplomatic negotions
+break down. There's no trickery or deceit here; your opponent is fully
+aware of your attack, and may the strongest fighter win.
+
+\paragraph{Example}
+\begin{dialogue}
+  \speak{GM} Hiroshi, at your words the guard silently removes his
+  sunglasses, puts them in his pocket, and gets down into a fighting
+  pose. It looks like he's not going to let you pass unless it's over
+  his dead body.
+
+  \speak{Hiroshi} That can be arranged. I launch a haymaker at him.
+
+  \speak{GM} Sounds like a brawl to me. Roll+Hard.
+
+  \speak{Hiroshi} 11. Damn straight. I'll avoid the counterattack.
+
+  \speak{GM} Sure. As you rush towards the guard he aims a fist at
+  you, but it whizzes past your ear as your punch smacks him in the
+  face. He staggers backwards, surprised.
+
+  \speak{Hiroshi} ``Are you going to let me pass now, or do I have to
+  give you another lesson?''
+
+  \speak{GM} ``Hmm, not bad,'' the guard replies, as he retrieves the
+  stun baton off his belt, ``but it'll take more than that to beat
+  me!'' He gives it a flick and it extends, crackling with
+  electricity. What do you do?
+\end{dialogue}
+
+\movenofail{Riposte}{anticipate a chance to counterattack}{Fast}
 {deal your damage to the enemy and avoid their attack}
 {choose one:
 \begin{itemize}
 \item Deal damage to your enemy
-\item Avoid a counterattack
+\item Avoid their attack
 \end{itemize}}
+
+A Riposte is a more calculated melee move, which involves anticipating
+your opponent's attack. In this way you can more easily avoid damage,
+but you're not as dangerous yourself. A riposte triggers whenever
+you're fighting defensively.
+
+\paragraph{Example}
+\begin{dialogue}
+  \speak{GM} Yuki, you hear a voice from behind you. ``Here you are,
+  my little kitten. Strayed so far from your friends? Why don't you
+  play with me for a while?''
+  
+  \speak{Yuki} I only know one guy who spouts such tired lines! I spin
+  around to face him.
+
+  \speak{GM} He just likes to be theatrical, okay? As you guessed,
+  you're faced by Captain Flintlock, leader of the Imperial Invasion
+  Cohort. He's got his rapier drawn and is advancing towards you.
+
+  \speak{Yuki} This guy gives me the creeps. I'm going to deflect his
+  attack with my antique katana and run off.
+
+  \speak{GM} A Riposte? Roll+Fast, then.
+
+  \speak{Yuki} I'm not sure, I'm not really attacking him, just making
+  my escape.
+
+  \speak{GM} Hmm, if you're not counterattacking, then it's not really
+  a Riposte. Let's make it a Defy on Fast to get your defense up in
+  time and flee before he gets you.
+\end{dialogue}
 
 \move{Burst}{spray and pray with an semi- or fully-automatic weapon}{Cool}
 {deal your damage to the enemy}
@@ -37,6 +98,37 @@ be detailed here.
 \end{itemize}}
 {choose one}
 
+You don't need to be a better shot, you just need to fire more
+bullets! Full-auto weapons are hard to control, and unless you're
+military trained, which most classes aren't, this is how you'll be
+racking up that ammo bill with them. It also goes for semi-auto
+weapons, if you feel like hurting everything in the room except you.
+
+\paragraph{Example}
+\begin{dialogue}
+  \speak{GM} Bruno, as you whizz round the corner, you suddenly come
+  face-to-face with a small platoon of guards. They seem as surprised
+  to see you as you are at them.
+
+  \speak{Bruno} Shit! I give them a taste of my assault rifle fire.
+
+  \speak{GM} Indiscriminate bullets solve everything. Roll Burst with
+  Cool, if you don't mind.
+
+  \speak{Bruno} Uhh, a 5.
+
+  \speak{GM} How cool of you. Right, either you empty your clip,
+  leaving yourself vulnerable, or you hit an explosive container that
+  will collapse this corridor, blocking passage. Or you can hit them,
+  but both of those will happen.
+
+  \speak{Bruno} Will that explosion take out the bad guys?
+
+  \speak{GM} I'm afraid your ``quick thinking'' didn't afford you time to check.
+
+  \speak{Bruno} Whoops.
+\end{dialogue}
+
 \movenofail{Aim}{take aim and fire with a semi-auto or single-action weapon}{Plan}
 {deal your damage to the enemy}
 {deal your damage but choose one:
@@ -46,15 +138,55 @@ be detailed here.
 \item You have to empty your clip or throw another one
 \end{itemize}}
 
-\move{Hold Fast}{stand your ground}{Cool} % alternate name: Suffer
+Aiming is a more conservative method of fighing at range, as well as
+how you use single-action and thrown weapons. Note this move is
+triggered even if the enemy is unaware of you. Aiming is \emph{hard},
+you know.
+
+\paragraph{Example}
+\begin{dialogue}
+  \speak{GM} Alright, Agent 0, the chance you've been waiting for is
+  here. You see through your scope the Yakuza boss you've been tailing
+  getting out of his armoured limo.
+
+  \speak{Agent 0} You screwed up for the last time. I take the shot.
+
+  \speak{GM} Sounds like Aim to me.
+
+  \speak{Agent 0} 8. Well, I guess I don't need my ammo on this
+  distant rooftop. I'll empty the clip.
+
+  \speak{GM} Fair enough. The gangsters begin to scatter as the sound
+  of your rifle rings out. Your last shot meets its mark, splattering
+  his brains across the alley, but as you scan the carnage, you notice
+  your contact, Kensuke, was also there, and you just shot him in the
+  leg with a stray bullet.
+
+  \speak{Agent 0} Oh, that's not good.
+\end{dialogue}
+
+\movenofail{Hold Fast}{stand your ground}{Cool} % alternate name: Suffer
 {you maintain the status quo despite outside forces}
-{choose two:
-\begin{itemize}
-\item maintain the status quo
-\item you don't take attrition
-\item you don't lose something important
-\end{itemize}}
-{choose one}
+{the GM will offer you a choice. You can maintain the status quo, but you will have to suffer attrition or give up something important. The GM will say what.}
+
+%% You Hold Fast when something is trying to make you give up. When a
+%% negotiation starts to go badly, when your character endures something
+%% that doesn't obviously just cause harm, or even when you stand in defense of
+%% something, you might Hold Fast.
+
+%% On a 7--9, ``attrition'' and ``something important'' can be
+%% interpreted broadly. It could be extra cash to smooth over
+%% negotiations, straight up harm from lethal radiation, important
+%% information like your secret identity, or any number of other things.
+
+%% \movenofail{Persevere}{do something under fire, or dig in to endure fire}{Cool}{you do it.}{you flinch, hesitate, or stall: the GM can offer you a worse outcome, a hard bargain, or an ugly choice.} 
+
+%% \paragraph{Example}
+%% \begin{dialogue}
+%%   \speak{GM}
+%% \end{dialogue}
+
+%% Fast Talk
 
 \movenofail{Taunt}{insult or make a snarky comment at someone}{Talk}
 {choose two:
@@ -107,7 +239,7 @@ Assuming you have time to react, Roll+Stat:
 
 \subsection{Special Moves}
 
-\movedesc{Intermission}{settle in to rest and maintain your mecha}{restore all depleted Mecha Items. If you leveled up, take care of that. When you wake from at least a few uninterrupted hours of sleep heal damage equal to half your max HP.}
+\movedesc{Intermission}{settle in to rest and maintain your mecha}{restore all depleted Mecha Items. You may also change the type of one of them. If you leveled up, take care of that. When you wake from at least a few uninterrupted hours of sleep heal damage equal to half your max HP.}
 
 \movedesc{Level Up}{mark your 5th experience point}{increment your level and reset your experience to zero. The next Intermission, choose a new advanced move from your class.}
 
