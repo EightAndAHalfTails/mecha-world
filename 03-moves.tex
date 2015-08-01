@@ -84,7 +84,7 @@ you're fighting defensively.
   my escape.
 
   \speak{GM} Hmm, if you're not counterattacking, then it's not really
-  a Riposte. Let's make it a Defy on Fast to get your defense up in
+  a Riposte. Let's make it a Dash to get your defense up in
   time and flee before he gets you.
 \end{dialogue}
 
@@ -165,9 +165,9 @@ you know.
   \speak{Agent 0} Oh, that's not good.
 \end{dialogue}
 
-\movenofail{Hold Fast}{stand your ground}{Cool} % alternate name: Suffer
-{you maintain the status quo despite outside forces}
-{the GM will offer you a choice. You can maintain the status quo, but you will have to suffer attrition or give up something important. The GM will say what.}
+%% \movenofail{Hold Fast}{stand your ground}{Cool} % alternate name: Suffer
+%% {you maintain the status quo despite outside forces}
+%% {the GM will offer you a choice. You can maintain the status quo, but you will have to suffer attrition or give up something important. The GM will say what.}
 
 %% You Hold Fast when something is trying to make you give up. When a
 %% negotiation starts to go badly, when your character endures something
@@ -179,14 +179,56 @@ you know.
 %% negotiations, straight up harm from lethal radiation, important
 %% information like your secret identity, or any number of other things.
 
-%% \movenofail{Persevere}{do something under fire, or dig in to endure fire}{Cool}{you do it.}{you flinch, hesitate, or stall: the GM can offer you a worse outcome, a hard bargain, or an ugly choice.} 
+\movenofail{Persevere}{do something under fire, or dig in to endure fire}{Cool}{you do it.}{you flinch, hesitate, or stall: the GM can offer you a worse outcome, a hard bargain, or an ugly choice.} 
 
-%% \paragraph{Example}
-%% \begin{dialogue}
-%%   \speak{GM}
-%% \end{dialogue}
+\paragraph{Example}
+\begin{dialogue}
+  \speak{GM} You rush into the room in which Princess Amelia is
+  supposedly held. Looks like your intel was accurate; she's
+  here. However, so is the evil Count Draconis, with an arm around her
+  neck and a gun to her head. ``Step back, you fools!'' he bellows,
+  ``You wouldn't want anything to happen to the young princess here,
+  would you?''
 
-%% Fast Talk
+  \speak{LeVallier} What a coward! I'll draw my pistol and take him
+  out before he has a chance to harm her.
+
+  \speak{GM} Hmm, okay. Well, I'd say you're acting under fire. You
+  can't risk harming the princess. Roll+Cool, if you please.
+
+  \speak{LeVallier} Fair enough. 9.
+
+  \speak{GM} Alright, hmm, let's go for an ugly choice. Either the
+  Count has a chance to get a shot off, missing Amelia's vitals, but
+  gravely wounding her, or your bullet goes straight through him,
+  killing him instantly but hitting a poorly-placed control panel
+  which sets the whole facility to self-destruct.
+
+  \speak{Levallier} That \emph{is} ugly\ldots
+\end{dialogue}
+
+\movenofail{Fast Talk}{make something up on the spot}{Talk}{everyone believes you.}{you raise suspicion, but people go along with you, for now.}
+
+\paragraph{Example}
+\begin{dialogue}
+  \speak{GM} Sanya, as you pass through this door, you gently bump
+  into a guard coming the other way. ``What are you doing here?'' he
+  asks, ``This is a restricted area.'' He has his hand on his rifle.
+
+  \speak{Sanya} ``I was just looking for the toilets, and I somehow
+  got lost.'' I giggle and bump my fist to the side of my
+  head. ``Tehehe!''
+
+  \speak{GM} Very convincing. Roll+Talk, please.
+
+  \speak{Sanya} 7.
+
+  \speak{GM} ``Is that so?'' He has his suspicions. ``In that case,
+  I'll escort you back to the visitors' area. Please come with me.''
+  He grabs your shoulder roughly and starts walking.
+
+  \speak{Sanya} Tsk. Now I've got to shake this guy somehow\ldots
+\end{dialogue}
 
 \movenofail{Taunt}{insult or make a snarky comment at someone}{Talk}
 {choose two:
@@ -196,6 +238,34 @@ you know.
 \item you don't provoke a retaliation
 \end{itemize}}
 {choose one}
+
+Bad guys have feelings too, you know. You can take advantage of that!
+With a well-placed burn or witty repartee, villains are prone to all
+sorts of blunders. Just watch out you don't get burned yourself.
+
+\paragraph{Example}
+\begin{dialogue}
+  \speak{Minori} ``Enough is enough, councillor Hakumoto! All your
+  talk about the restoration of humanity was only so much hot air. In
+  the end, you're just a senile old fool, scared of his own
+  mortality!''
+
+  \speak{GM} Ouch. While I get him some burn cream, roll Taunt, if you
+  don't mind.
+
+  \speak{Minori} 13! I'll take the information, no retaliation,
+  please.
+
+  \speak{GM} ``Fooools!'' Hakumoto flies into a rage. ``You know
+  nothing! The Humanity Restoration Project is only the beginning! As
+  we speak, the sucessful samples are being exported from this
+  facility. They're going to do very well out in the field. Very well
+  indeed!'' He laughs madly.
+
+  \speak{Minori} Damn, we need to get down to the cargo bay right now!
+\end{dialogue}
+
+\movenofail{Dash}{try to evade a danger or get somewhere quickly}{Fast}{you're fast enough.}{you make it, but your hesitation costs you. You leave something behind, or end up in a vulnerable spot, GM's choice.}
 
 \movenofail{Share Memories}{consult your accumulated knowledge about something}{Plan}{the GM will tell you something interesting and useful about the subject relevant to your situation.}{the GM will only tell you something interesting---it's on you to make it useful.}
 
@@ -214,19 +284,19 @@ Either way, take $+1$ forward when acting on the answers.
 \item What here is not what it appears to be?
 \end{itemize}
 
-\movedesc{Defy}{make a last-ditch attempt to avoid a calamity}{pick the stat you are using.}
-If you do it:
-\begin{itemize}
-\item By ignoring the danger or overcoming your fears, use Cool
-\item With quick talking, an inspiring word, or a witty retort, use Talk
-\item With a feat of strength or endurance, use Hard
-\item With lightning reflexes or speed, use Fast
-\item By using gadgets or technical knowledge, use Tech
-\item With a premeditated strategy or a bright idea, use Plan
-\end{itemize}
-Assuming you have time to react, Roll+Stat:
-\rollresnofail{you do what you set out to, the threat doesn’t come to bear}
-{you stumble, hesitate, or flinch: the GM will offer you a worse outcome, hard bargain, or ugly choice}
+%% \movedesc{Defy}{make a last-ditch attempt to avoid a calamity}{pick the stat you are using.}
+%% If you do it:
+%% \begin{itemize}
+%% \item By ignoring the danger or overcoming your fears, use Cool
+%% \item With quick talking, an inspiring word, or a witty retort, use Talk
+%% \item With a feat of strength or endurance, use Hard
+%% \item With lightning reflexes or speed, use Fast
+%% \item By using gadgets or technical knowledge, use Tech
+%% \item With a premeditated strategy or a bright idea, use Plan
+%% \end{itemize}
+%% Assuming you have time to react, Roll+Stat:
+%% \rollresnofail{you do what you set out to, the threat doesn’t come to bear}
+%% {you stumble, hesitate, or flinch: the GM will offer you a worse outcome, hard bargain, or ugly choice}
 
 \movenofail{Jury Rig}{use a piece of equipment for something other than its intended purpose}{Tech}
 {you succeed}
