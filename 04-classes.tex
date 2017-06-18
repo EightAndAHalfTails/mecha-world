@@ -1,5 +1,8 @@
 \section{Classes}
 
+% TODO finish class moves
+
+% Operator Inspirations: Venom Snake, Jules, Price
 \subsection{Operator}
 {\itshape You're not like the others, are you? They all fight for
   something, or maybe it's more accurate to say they all still have
@@ -16,7 +19,7 @@ the mecha are more human than you are.}
 
 Choose one for each:
 
-Dead Eyes, Hard Eyes, or Gleeful Eyes
+Dead Eyes, Hard Eyes, or Bored Eyes
 
 Military Gear, Concealing Clothes, or Casual Wear
 
@@ -32,60 +35,66 @@ Choose one set:
 
 Your Max Health and Max Load are both 8+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Cause a massacre.
 \paragraph{Yang:} Open up to somebody.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn.  List the other characters' names.  Go around again for
-Hx. On your turn, choose 1, or both:
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
 \begin{itemize}
-\item One of them knew you before you lost your humanity. Tell that player Hx$+2$.
-\item One of them has seen you at your worst. Tell that player Hx$-2$.
-\item Tell the others Hx$-1$. You keep to yourself.
-\end{itemize}
-On the others’ turns:
-\begin{itemize}
-\item You try not to get too attached. Whatever number they tell you,
-  give it $-1$ and write it next to their character’s name.
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
 
-\move{Volley}{target multiple enemies with a single burst}{Cool}
-{Deal your damage to each enemy}
-{Deal your damage to half the enemies, rounded down. The GM will tell you which ones}
-{as above, but you also may hit unintended targets}
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you knew me before I lost my humanity?" Whoever answers, offer that player $+1$-interest.
+\item "Which one of you has seen me at my worst?" Whoever answers, offer that player $-1$-interest.
+\end{itemize}
+Tell the others 0-interest.
+
+After each other character's introduction:
+\begin{itemize}
+\item You try not to get too attached. Your interest in them is 1 less than whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with four moves from the ones below:
+
+% You *can* leave options which would imply an unintended target is hit, like the first choice in Burst
+\subsubsection{Trigger Discipline} You never hit unintended targets with a weapon. You cannot pick options that explicitly cause this to happen, and if a move tells you that you hit unintended targets, ignore it.
 
 \move{Deathwish}{walk out into a storm of bullets}{Cool}
-{Choose up to 3 visible enemies in range and make immediate consecutive attacks against them}
-{Choose up to 3 enemies and make immediate consecutive attacks against them at the cost of taking 1-harm per target chosen}
-{Make an attack against 1 enemy but receive a counterattack}
+{Deal damage to all visible targets in range.}
+{Choose a number of visible targets in range. Deal your damage to them, then take that many harm.}
 
 \move{Breach and Clear}{make an explosive entry into a hostile area}{Plan}
-{Choose up to 3 visible enemies in range and make immediate consecutive attacks against them}
-{Choose up to 2 enemies, but 1 from the following list}
-{Choose one enemy and two from the list:
-\begin{itemize}
-\item Flying debris inflicts 1-harm with 1 piercing to you
-\item There are more enemies than expected
-\item You hit an unintended target
-\end{itemize}}
+{Deal damage to all visible targets in range.}
+{as 10+, but there was something unexpected on the other side. The GM will tell you what.}
+
+\subsubsection{Stone Cold} You never have to \linkmove{Persevere} to shoot someone, no matter how high the stakes.
+
+\subsubsection{Did I Break Your Concentration?} Shooting someone or one of their associates always counts as holding up your end of a \linkmove{Bargain} with them.
+
+\movedesc{Battlefield Instincts}{leap into battle, figuring things out as you go}{you may perform \linkmove{Situational Analysis} as though you rolled a 7--9 on the move.}
 
 \subsubsection{Equipment}
-You have an SMG (2-harm, close, full-auto, loud, 2 weight), choose its 2 attachments:
+You have an SMG (2-harm, close, full-auto, loud, 2 weight), choose 2 customisations:
 \begin{itemize}
 \item Silencer ($-$loud)
 \item Skeleton Stock ($-1$ Weight)
-\item AP ammo ($+1$ piercing)
+\item AP Ammo ($+1$ piercing)
 \item Collapsible Stock (+hand)
-\item IR scope (night vision)
+\item IR Scope (night vision)
 \end{itemize}
 
-You also have a pistol (2-harm, close, hand, semi-auto, loud, 1 weight), choose its attachment:
+You also have a pistol (2-harm, close, hand, semi-auto, loud, 1 weight), choose a customisation:
 \begin{itemize}
 \item Silencer ($-$loud)
-\item .45 cal ($+1$-harm)
+\item Revolver Action ($+1$-harm, single)
 \item AP ammo ($+1$ piercing)
 \end{itemize}
 
@@ -97,22 +106,23 @@ You get:
 \item 3 Tactical Grenades (0 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Utility Rifle}
-Your mecha is equipped with an assault rifle (2-harm, close, semi-auto, full-auto, loud, two-handed, 2 weight). Choose its 3 attachments:
+\subsubsection{Improvement}
 \begin{itemize}
-\item Ripper Ammo ($+1$-harm, messy)
-\item AP Ammo ($+1$ piercing)
-\item Dragon's Breath Ammo (fire)
-\item Scope (+far)
-\item Rocket Launcher (4-harm, close, far, single, loud, messy, area, $+2$ weight)
-\item EMP Grenade Launcher (3s-harm, close, single, emp, area, $+1$ weight)
-\item Bayonet (2-harm, 1 piercing, intimate, hand)
+\item get $+1$ Cool (max $+3$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Operator move
+\item get a new Operator move
+\item get an Agency, \linkmove{Mission}, and \linkmove{Call For Support}
+\item get a Bodyguard and \linkmove{Command}
 \end{itemize}
 
-\movedesc{Mecha Special Ability: Possessed}{fight on despite severe wounds}{you inflict an extra 1-harm with each attack.}
 
 
-
+% Wiseguy Inspirations: Hazuma
 \subsection{Wiseguy}
 {\itshape Where would these misfits be without you, eh? Just the other
   day you tried to strike up a rousing conversation with the Brawler,
@@ -146,25 +156,35 @@ Choose one set:
 
 Your Max Health and Max Load are both 6+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Uncover dirt on someone.
-\paragraph{Yang:} Resolve a tense situation without violence.
+\paragraph{Yang:} Resolve a heated situation without violence.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn.  List the other characters' names.  Go around again for
-Hx. On your turn, choose 1 or both:
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
 \begin{itemize}
-\item One of them got you out of a pinch. Tell that player Hx$+2$.
-\item One of them set you up and let you take the fall. Tell that player Hx$-2$.
-\item Tell the others Hx$+1$. You're an open guy.
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
-On the others’ turns:
+
+Then ask at least one of the following of the other characters:
 \begin{itemize}
-\item Whatever number they tell you, give it $+1$ and write it next to
-  their character’s name. You've done your research.
+\item "Which one of you got me out of a pinch?" Whoever answers, offer that player 1-interest.
+\item "Which one of you set me up and let me take the fall?" Whoever answers, offer that player $-1$-interest.
 \end{itemize}
+Tell the others 1-interest. You're an open person.
+
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I have some dirt on you." Your interest in them is 2 regardless of what they offer you.
+\item You've done your research on the others. Your interest in them is 1 greater than whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with four moves from the ones below:
 
 % written by Luke
 \move{Networking}{arrive at a new location and mention an old accomplice or contact}{Talk, describe how you remember them, and recount a whacky anecdote about them}
@@ -176,16 +196,33 @@ On the others’ turns:
 \item They don't remember you, at least not fondly.
 \item You still owe them a favour or money
 \end{itemize}}
-{they're long gone or at the GM's discretion they're in town, but the winds of fate have positioned them to oppose you, not aid you.}
 
 \move{Wisecrack}{tell a joke to defuse a tense situation}{Talk}
 {Everyone present relaxes and becomes a little more amicable}
 {Your joke falls flat, but the attempt causes everyone to calm down. Everyone becomes more amicable, but you take $-1$ forward, in shame.}
-{Your light-hearted treatment of the situation pisses people off.}
 
-\movenofail{Eye On The Door}{are in too deep and need a way out}{Plan, naming your escape route:}
+\move{Eye On The Door}{are in too deep and need a way out}{Plan, naming your escape route:}
 {you're gone. Catch you later, suckers!}
 {you can stay or go, but if you go you either leave something behind, or take something with you, the GM will tell you what.}
+
+\move{Taunt}{insult or make a snarky comment at someone}{Talk}
+{choose two:}
+{choose one:
+\begin{itemize}
+\item you provoke them into making an error
+\item you provoke them into revealing information
+\item you don't provoke a retaliation
+\end{itemize}}
+
+\movedesc{A Real Charmer}{speak frankly with someone}{Ask their player a question from the list. They must answer truthfully. Their player will then pick a question to ask you. Tell them the truth, now.
+\begin{itemize}
+\item How is your character really feeling?
+\item What does your character want to do?
+\item What does your character want me to do?
+\item How can I get your character to \_\_\_?
+\end{itemize}}
+
+\movedesc{Hold on to Your Hat}{give up on doing anything except avoiding harm}{gain +2 armour forward}
 
 \subsubsection{Equipment}
 You have your trusty piece(s) for when things go hot. Choose 1 and give it a nickname:
@@ -194,25 +231,22 @@ You have your trusty piece(s) for when things go hot. Choose 1 and give it a nic
 \item Dual Mini-Uzis (2-harm, two-handed, hand, close, full-auto, 1 weight) 
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Wave Emitter}
-This unique weapon releases a beam of waves which either constructively or destructively interfere with a target mecha. When you use it, choose a target and an effect:
+\subsubsection{Improvement}
 \begin{itemize}
-\item Neutralise an EMP effect.
-\item Disable or enhance their movement systems.
-\item Give them $\pm 1$ ongoing.
-\item Increase or decrease their damage by 1-harm.
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+3$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Wiseguy move
+\item get a move from any class
+\item get an Agency, \linkmove{Mission}, and \linkmove{Call For Support}
+\item get \linkmove{Background Check}
 \end{itemize}
-Then roll+Plan:
-\rollresnofail{The target gets the effect while you keep the weapon trained on them.}
-{The effect still works, but it attracts unwanted attention, drains your own power, or resonates with other targets, affecting them as well, GM's choice.}
-
-\move{Mecha Special Ability: Crosstalk}{listen in to the enemy's transmissions}{Talk}
-{you overhear some interesting and useful information.}
-{you overhear some interesting info, but it's not immediately useful.}
-{you hear useless banter or the encryption is too strong. Curses!}
 
 
 
+% Brawler Inspirations: Heavy, AW Gunlugger, Yamada (Valvrave)
 \subsection{Brawler}
 {\itshape They always say weapons don't kill people, people do. Well,
   what are the weapons for, then? A weapon is nothing without a strong
@@ -248,38 +282,56 @@ Choose one set:
 
 Your Max Health and Max Load are both 10+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Make a mess of somebody.
 \paragraph{Yang:} Put yourself in harm's way.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn.  List the other characters' names.  Go around again for
-Hx. On your turn, choose 1, 2, or all 3:
-\begin{itemize} % how others get on with you
-\item One of them you've fought in a brawl. Tell that player Hx$+2$.
-\item One of them clearly thinks you're an idiot. Tell that player Hx$-2$.
-\item Choose which one of them you think is prettiest. Tell that player Hx$+2$.
-\item Tell the others Hx$+1$. You're just not a complicated person.
-\end{itemize}
-On the others’ turns:
-\begin{itemize} % how you get on with others
-\item Whatever number they tell you, give it $-1$ and write it next to
-  their character’s name. You have trouble expressing yourself.
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
+\begin{itemize}
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
 
-\subsubsection{My Guns Are Right Here}
-Your unarmed strike counts as a weapon: (2-harm, two-handed, intimate, fused, 0 weight).
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you have I fought?" Whoever answers, offer that player 1-interest.
+\item "Which one of you clearly thinks I'm an idiot?" Whoever answers, offer that player $-1$-interest.
+\end{itemize}
+Tell the others 1-interest. You're just not a complicated person.
+
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I think you're the prettiest." Your interest in them is 2 regardless of what they offer you.
+\item You have trouble expressing yourself to the others. Your interest in them is 1 less than whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with \linkmove{My Guns Are Right Here}, plus three moves from the others below:
+
+\subsubsection{My Guns Are Right Here}\label{sec:My Guns Are Right Here}
+Your unarmed strike counts as a weapon: (2-harm, intimate, fused, 0 weight).
 
 \movedesc{Full Force}{succeed a Brawl with a 10+}{you may choose both options.}
 
-\move{Imagine This Is Your Head}{intimidate information out of an enemy with a show of force}{Hard}
+\move{Like Shell of Egg}{intimidate information out of an enemy with a show of force}{Hard}
 {they immediately tell you what you want to know. What you do next is up to you.}
 {they agree to tell if you let them go, and want to be certain they won't be harmed.}
-{they spit in your face, to the extent possible.}
 
-\movedesc{It's a Monster!}{stand your ground}{you may roll Hold Fast with Hard instead of Cool}
+\movedesc{Battle-Hardened}{persevere or go on lookout}{roll+Hard instead of what that move requires}
+
+\movedesc{Relentless}{inflict harm}{inflict $+1$-harm}
+
+\move{The Hard Way}{use straight-up force to destroy an inanimate obstacle}{Hard}{choose 3.}{choose 2.}
+\begin{itemize}
+\item It doesn’t take a very long time
+\item Nothing of value is damaged
+\item It doesn’t make an inordinate amount of noise
+\item You can fix the thing again without a lot of effort
+\end{itemize}
 
 \subsubsection{Equipment}
 You have your fists, but I guess you can also have a gun, you know, just to be on the safe side. Choose one:
@@ -294,25 +346,24 @@ You get:
 \item 2 Stimpaks (0 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Reaper}
-Your mecha is equipped with a melee weapon: (2-harm, intimate, fused, 0 weight). Its look is up to you.
-Every time you destroy a mecha, add one of the following attachments:
+\subsubsection{Improvement}
 \begin{itemize}
-\item Hard Scrap ($+1$ harm)
-\item Sharp Scrap ($+1$ harm)
-\item Power Cutter ($+1$ piercing, messy)
-\item Long Scrap (+hand)
-\item Flexible Scrap (+versatile)
-\item Ingited Fuel (+fire)
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+3$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Brawler move
+\item get a new Brawler move
+\item get a Swordsmaster move
+\item get an Assassin move
 \end{itemize}
-The attachments are lost once you exit combat, GM's call.
-
-\move{Mecha Special Ability: Overclock}{pull all the power you can from your mecha's core}{Hard}
-{hold 3}{hold 1}{the failed attempt causes you to take $-1$ forward}
-Spend your hold when you take a hit to immediately counterattack. If the attacker is within close range, you immediately close the distance. Take $-1$ forward when you spend your last hold in this way. At any time you can release all your hold for no penalty.
 
 
 
+% Swordsmaster Inspiration: Raiden, Mitsurugi
+% TODO Decide whether to focus on samurai or general swordplay
 \subsection{Swordsmaster}
 {\itshape These fools lack honour and discipline. Look at them now,
   laughing carelessly over a shared lunch. They could be attacked
@@ -337,7 +388,7 @@ Tired Eyes, Fierce Eyes, or Piercing Eyes.
 
 Topknot, Wild Hair, or Shorn Hair
 
-Gi and Hakama, Noble Wear, or Bandages
+Gi and Hakama, Smart Clothes, or Bandages
 
 \subsubsection{Stats}
 Choose one set:
@@ -351,31 +402,37 @@ Choose one set:
 
 Your Max Health and Max Load are both 8+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Defeat a worthy opponent.
 \paragraph{Yang:} Fight for a good cause.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn.  List the other characters' names.  Go around again for
-Hx. On your turn, choose 1 or both:
-\begin{itemize} % how others get on with you
-\item One of them beat you in a fair fight. Tell that player Hx$+2$.
-\item One of them humiliated you. Tell that player Hx$-2$.
-\item Tell the others Hx$-1$. You're a bit of an eccentric.
-\end{itemize}
-On the others’ turns:
-\begin{itemize} % how you get on with others
-\item Choose the character you consider the weakest. Whatever number
-  that player tells you, give it $+1$ and write it next to their
-  character's name.
-\item Everyone else, whatever number they tell you, give it $-1$ and
-  write it next to their character’s name. You have no time for
-  frivolities.
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
+\begin{itemize}
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
 
-\subsubsection{Signature Weapon}
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you beat me in a fair fight?" Whoever answers, offer that player 1-interest.
+\item "Which one of you humiliated me?" Whoever answers, offer that player $-1$-interest.
+\end{itemize}
+Tell the others $-1$-interest. You're a bit of an eccentric.
+
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I think you're the weakest." Your interest in them is 1 more than whatever they offer you.
+\item You have no time for frivolities with the others. Your interest in them is 1 less than whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with \linkmove{Signature Weapon}, plus three moves from the ones below:
+
+\subsubsection{Signature Weapon}\label{sec:Signature Weapon}
 You are the bone of your sword. Perhaps it was created by a master smith centuries ago, or perhaps you found it on the floor. Regardless, this is your sword and it is irreplaceable, so don't lose it.
 
 Your base sword comes with a matching sheath and is (2-harm, hand, 2 weight).
@@ -401,17 +458,24 @@ Choose two enhancements:
 \move{Quickdraw}{are attacked in melee by an enemy while your sword is sheathed}{Fast}
 {draw your sword and inflict your damage, negating the incoming attack}
 {draw your sword and inflict your damage, but the enemy's attack still lands}
-{the enemy reaches you before you can draw your sword}
 
-\movenofail{You Are Already Dead}{resheathe your sword immediately after dealing damage}{Cool}
+\move{You Are Already Dead}{resheathe your sword immediately after dealing damage}{Cool}
 {Choose 2:
 \begin{itemize}
 \item Additional wounds are revealed on your enemy, adding 1-harm to the damage and applying the messy tag.
 \item Your spirit overflows, hitting nearby enemies for 1s-harm
-\item A nearby mook flees in terror
-\item A nearby character is impressed
+\item You terrify or impress onlookers.
 \end{itemize}}
 {choose 1}
+
+% TODO why do they ask a question if you study them from afar?
+\move{Battlefield Psychology}{study an opponent in battle}{Cool}
+{ask their player any one question. They must answer truthfully.}
+{As $10+$, but they get to ask you a question as well. Tell them the truth, now.}
+
+\subsubsection {Move 5 Placeholder} % TODO
+
+\subsubsection {Move 6 Placeholder} % TODO
 
 \subsubsection{Equipment}
 You get your signature weapon, but choose your defenses:
@@ -421,25 +485,23 @@ You get your signature weapon, but choose your defenses:
 \item Exoskeleton (2-armour, fused, 0 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Lightning Blade}
-Your mecha's sword (2-harm, hand, 2 weight) is as fast as lightning. When you \textbf{cut an enemy with the Lightning Blade}, roll+Fast.
-\rollresnofail{electricity flows out of the cut, striking other nearby enemies for 1s-harm and temporarily stunning them with an EMP}
-{the electricity inflicts 1s-harm to other nearby enemies}
-
-\movenofail{Mecha Special Ability: Blade Focus}{channel energy into the Lightning Blade}{Cool}
-{the Lightning Blade begins to glow with an unnatural light. Choose 2 enhancements from the list below.}
-{Choose 1 enhancement. At your option you can choose 2 but blow out a subsystem, depleting 1 Mecha Item of your choice.}
-Enhancements:
+\subsubsection{Improvement}
 \begin{itemize}
-\item $+1$-harm
-\item $+1$ forward
-\item (+fire)
-\item (+close)
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+3$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Swordsmaster move
+\item get a new Swordsmaster move
+\item get an Agency, \linkmove{Mission}, and \linkmove{Call For Support}
+% TODO \item get a Bodyguard and \linkmove{Command}
 \end{itemize}
-The enhancements wear off when you sheathe your sword or exit combat, GM's call.
 
 
 
+% Hikikomori Inspiration: Akira (Valvrave), Komori Kiri
 \subsection{Hikikomori}
 {\itshape What was that noise? Is someone there? Maybe if you're quiet
   enough, they'll think you're not in. You shun outside
@@ -457,7 +519,7 @@ Choose one for each:
 
 Tired Eyes, Calculating Eyes, or Hair Over Eyes.
 
-Messy Hair, Long Straight Hair, or Covered Hair
+Scruffy Hair, Long Hair, or Covered Hair
 
 Tracksuit, T-shirt and Jeans, or Pyjamas
 
@@ -473,55 +535,90 @@ Choose one set:
 
 Your Max Health and Max Load are both 6+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Wait out a calamity by hiding.
 \paragraph{Yang:} Open up to somebody.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn.  List the other characters' names.  Go around again for
-Hx. On your turn:
-\begin{itemize} % how others get on with you
-\item Choose the character who is basically your guardian. Tell that player Hx$+2$.
-\item Tell the others Hx$-1$. You're terrified of social interaction.
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
+\begin{itemize}
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
-On the others’ turns:
-\begin{itemize} % how you get on with others
-\item Choose the character you consider the coolest. Whatever that player tells you, ignore it and write Hx$+3$ next to their character's name instead.
-\item Everyone else, whatever number they tell you, give it $-1$ and
-  write it next to their character’s name.
+
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you is basically my guardian?" Whoever answers, offer that player 1-interest.
 \end{itemize}
+Tell the others $-1$-interest. You tend to make others uncomfortable.
+
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I think you're the coolest." Your interest in them is 2 regardless of what they offer you.
+\item You prefer to be alone. Your interest in the others is 1 less than whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with four moves from the ones below:
 
 \move{Security Expert}{attempt to overcome network security}{Tech}
-{choose three from the list below:
+{choose three:}
+{choose one:
 \begin{itemize}
-\item You learn something new about your adversary
-\item You disable something of the enemy's
-\item You sow misinformation among the enemy
-\item Your intrusion is undetected
+\item You learn something useful.
+\item You disable something.
+\item You plant false information.
+\item Your intrusion is undetected. Otherwise, they know you were there but not what you did.
 \end{itemize}}
-{choose one}
-{you are detected before you can do anything}
 
-\move{Don't Come In!}{trap a room or entrance}{Plan and deplete 1 Tech Item}
-{hold 3}
-{hold 2}
-{hold 1, plus whatever the GM says when you spend it}
-Spend your hold when a character approaches the trap to choose one of the following:
+\subsubsection{Trapper}
+You've mastered the art of turning electrical devices into dangerous and useful traps.
+Choose three traps from the list below. When you have time to build and a safe place,
+deplete one Tech Item and produce one of each of the traps you chose. When you
+build a trap, choose a trigger from the ones available for that trap. Timed traps go off
+after a certain amount of time that you specify when you set it. Proximity traps go off
+when someone approaches the trap, doesn't matter who. Static traps do not trigger,
+their effects are always active once set.
 \begin{itemize}
-\item neutralise the intruder
-\item observe the intruder
-\item play a prerecorded message to the intruder
+\item \textbf{Alarm} (timed, proximity)\hfill Produces a loud noise.
+\item \textbf{Stun} (proximity) \hfill Shocks a person unconscious.
+\item \textbf{Hazard} (static) \hfill Makes a chokepoint, like a doorway, impassable.
+\item \textbf{Paralysis} (proximity) \hfill Stops a person or group from moving.
+\item \textbf{Incendiary} (timed) \hfill Starts a fire.
+\item \textbf{Poison} (proximity) \hfill Delivers a slow-acting but lethal poison.
+\item \textbf{Bomb} (timed, proximity) \hfill Causes an explosion.
+\item \textbf{Camera} (static) \hfill Allows you to remotely observe the area.
 \end{itemize}
 
-\movedesc{Kindred Spirits}{talk with another weirdo}{invert your talk score when rolling +Talk with them}
+\move{Frequent Poster}{put out word about something you want or need}{Tech if you post on the Internet, or Talk if you ask around}{Someone has it, just for you.}{You'll have to settle for something close or it comes with strings attached, your call.}
+
+\movedesc{Killer Rabbit}{act innocent}{roll+Plan on your \linkmove{Fast Talk} move instead of +Talk}
+
+\move{Background Check}{research a person}{Tech if you use the web, or Talk if you ask around}{ask the GM 3 questions from the list:}{ask 1:
+\begin{itemize}
+\item Whom do they serve?
+\item Where are they now?
+\item What are they famous for?
+\item How are they weak to me?
+\item How can I get them to \_\_\_?
+\end{itemize}}
+
+\movedesc{Viper Strike}{attack a surprised or defenseless enemy}{you can choose to deal your damage or roll+Fast}
+\rollres{You knock them out or kill them, your choice.}{as 10+, but choose 1:
+\begin{itemize}
+\item They fight back.
+\item They make a noise.
+\end{itemize}}
 
 \subsubsection{Equipment}
-Choose a weapon:
+
+Choose one:
 \begin{itemize}
-\item Antique sword (hand, valuable, 2-harm, 2 weight)
-\item Taser (intimate, 2s-harm, hi-tech, 0 weight)
+\item Hand taser (intimate, 2s-harm, hi-tech, 0 weight)
+\item Kitchen knife (hand, 2-harm, 1 weight)
 \end{itemize}
 
 You get:
@@ -531,19 +628,23 @@ You get:
 \item An item which affords you emotional security, at your option it can also provide 1-armour
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Violation}
-Your mecha is equipped with a melee weapon (2-harm, hand, 2 weight). Its look is up to you.
+\subsubsection{Improvement}
+\begin{itemize}
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+3$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Hikikomori move
+\item get a new Hikikomori move
+\item get a Techie move
+\item get a Bodyguard and \linkmove{Command}
+\end{itemize}
 
-When you \textbf{deal damage with Violation}, Roll+Tech:
-\rollresnofail{the target, if it survives, is under your control. You can control the mecha as though it were piloted by a hireling of yours. The actual pilot is locked out of the system.}
-{you gain partial control. You can control either the movement systems, the weaponry, or another prominent system of your choice.}
-You can only control one target at a time. If you take a new thrall, you lose control over the previous one.
-
-\subsubsection{Mecha Special Ability: No Words}
-Your mecha is equiped with the latest jamming technology. Any signals originating, terminating, or passing through the area within close range of your mecha can be jammed, making them corrupted and unrecognisable. However, participants will know they are being jammed.
 
 
-
+% Assassin Inspiration: Agent 47
 \subsection{Assassin}
 {\itshape For what reason do you do this? Don't bother lying to me,
   everyone has a reason. People may fight trivially, but they always
@@ -579,43 +680,65 @@ Choose one set:
 
 Your Max Health and Max Load are both 7+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Kill someone without anyone else knowing.
 \paragraph{Yang:} Kill someone nobody will mourn.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn. List the other characters' names. Go around again for
-Hx. On your turn, choose 1 or both:
-\begin{itemize} % how others get on with you
-\item One of them you've worked with before. Tell that player Hx$+1$.
-\item One of them unintentionally saved. You were just doing your job. Tell that player Hx$+2$.
-\item Tell the others Hx$-1$. You don't like giving away more details than necessary.
-\end{itemize}
-On the others’ turns:
-\begin{itemize} % how you get on with others
-\item Choose the character you mistrust the most. Whatever that player
-  tells you, add 1 to it and write ite next to their character's name.
-\item Everyone else, whatever number they tell you, write it next to
-  their character’s name.
-\end{itemize}
-
-\move{Assassinate}{try to take down a target with a high-powered rifle}{Plan}
-{you take out your target without leaving evidence. At your option you can also make it look like an accident}
-{Choose one:
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
 \begin{itemize}
-\item you take out your target but leave behind evidence
-\item your target is permanently crippled in some way, but lives. However, you do not leave behind evidence
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
+\end{itemize}
+
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you have I worked with before?" Whoever answers, offer that player 1-interest.
+\item "Which one of you have I saved while I was just doing my job?" Whoever answers, offer that player 1-interest.
+\end{itemize}
+Tell the others $-1$-interest. You don't like giving away more details than necessary.
+
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I don't trust you." Your interest in them is 1 more than whatever they offer you.
+\item Your interest in the others is whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with four moves from the ones below:
+
+\movedesc{Assassinate}{take time to make a plan to kill someone}{Name the person you want to kill. Ask the GM these questions. You and your allies take +1 forward when acting on the answers.
+\begin{itemize}
+\item What is their most powerful defense?
+\item Who will avenge them?
+\item Who else wants them dead?
+\item What is my best opportunity?
 \end{itemize}}
-{your target is only permanently crippled, and you leave evidence}
 
-\move{Selective Hearing}{attempt to pick out a target in a crowd that you're in}{Cool and say what you're listening out for}
-{you identify your target and also overhear some interesting information}
-{you identify your target, but they're just leaving}
-{you narrow your target to one of three people, all of whom are heading in different directions}
+\movedesc{Silent Takedown}{when you have an unaware or defenseless enemy at close range or closer}{you can kill them without a sound, you don't need to use a weapon. Snap their neck if you have to.}
 
-\movedesc{Silent Takedown}{catch an enemy unawares or have an enemy defenseless}{you can kill them without a sound, you don't need to use a weapon. Snap their neck if you have to.}
+\movedesc{Disguise}{have time and materials} you can create a disguise that
+will fool anyone into thinking you're someone else. Your actions can give you away but your
+appearance won't.
+
+\move{Visions of Death}{go into battle}{Plan}
+{name one person who'll die and one who'll live.}
+{name one person who'll die OR one person who'll live.
+Don't name a player's character; name NPCs only.
+The GM will make your vision come true, if it's even remotely possible.}
+
+\movedesc{Overwatch}{watch over your allies from a vantage point}{roll+Plan for your \linkmove{Lookout} move instead of +Fast.}
+
+\move{Death's Shadow}{stealth your way through a guarded area}{Plan}
+{you're in.}
+{you're in, but choose 1:
+\begin{itemize}
+\item Someone's on your tail.
+\item You have to leave something behind.
+\end{itemize}}
 
 \subsubsection{Equipment}
 
@@ -642,15 +765,24 @@ You get:
 \item 1 Explosives Kit (1 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Osiris Cannon}
-Part of your mecha is in fact a high-powered stabilised projectile launcher. (3-harm, single, far, distant, loud, messy, fused, 3 weight) Describe its look and where it is attached.
+\subsubsection{Improvement}
+\begin{itemize}
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+3$)
+\item get a new Assassin move
+\item get a new Assassin move
+\item get an Agency, \linkmove{Mission}, and \linkmove{Call For Support}
+\item get a Tactician move
+\end{itemize}
 
-When you \textbf{land a hit with the Osiris Cannon}, you can choose to trade harm for the destruction of the target's equipped mecha items, at the rate of 1-harm for 2 items destroyed.
-
-\movedesc{Mecha Special Ability: Disguise}{examine the remains of a destroyed mecha}{you can tune your IFF signal to match. Any automated systems will react as though you were the mecha in question. However, this does nothing to change your outward appearance.}
 
 
-
+% minor rewrite to allow for non-combat inspiration, such as medic or mascot
+% Paragon Inspiration: Kamina, Compa
 \subsection{Paragon}
 
 {\itshape What do the people of Mecha World do when they're lying
@@ -686,31 +818,54 @@ Choose one set:
 
 Your Max Health and Max Load are both 8+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Demoralise enemies by defeating their leader.
-\paragraph{Yang:} Go in without a plan.
+\paragraph{Yang:} Endanger yourself to protect someone weaker than you.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn. List the other characters' names. Go around again for
-Hx. On your turn:
-\begin{itemize} % how open you are
-\item Choose the character you feel needs the most support. Tell that player Hx$+2$.
-\item Tell the others Hx$+1$. You'll always listen to your comrades.
-\end{itemize}
-On the others’ turns:
-\begin{itemize} % how interested you are
-\item Whatever number they tell you, write it next to their
-  character’s name.
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
+\begin{itemize}
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
 
-\movenofail{Inspire}{lead the attack against a foe}{Cool}{2 characters who can see you receive $+1$ forward}{1 character who can see you receives $+1$ forward}
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you is always relying on me?" Whoever answers, offer that player 1-interest.
+\end{itemize}
+Tell the others 0-interest.
 
-\movenofail{Pep Talk}{attempt to cheer up a dejected comrade}{Talk}{your little chat is mutually beneficial. Both mark 1 experience and get $+1$ forward}{your advice is helpful, but the ordeal takes it out of you. Your friend gets $+1$ forward, but you take $-1$ forward.}
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I feel like you need the most support." Your interest in them is 1 more than whatever they offer you.
+\item You'll always listen to your comrades. Your interest in the others is 1 more than whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with four moves from the ones below:
+
+\movedesc{Inspire}{lead the attack against a foe}{those you lead take +1 forward and +2 armour forward.}
+
+\movedesc{Pep Talk}{give advice to another player's character}
+{tell that player what you think they should do. They get +1 forward
+when following your advice and you each mark experience if they do.}
            
-\movenofail{Do The Impossible}{start the session}{Cool}{hold 2}{hold 1}
-Spend your hold 1-for-1 to reroll any dice roll made by anyone.
+\subsubsection{Do The Impossible}
+At the start of the session, hold 1.
+Spend your hold when a player misses a roll to treat that roll as a 10+ instead.
+
+\movedesc{If It Bleeds}{deal damage}{choose an ally, that ally gets +1 forward and +1-harm forward against your target}
+
+\move{Mano a Mano}{issue a challenge to a single enemy}{Talk}
+{They attack only you, and only they attack you.}
+{Choose one: They attack only you, or only they attack you.}
+
+\subsubsection{Move 6 Placeholder} % TODO
+% something about not dying...yet
+%\move{Stiff Upper Lip}
 
 \subsubsection{Equipment}
 Choose your weapon:
@@ -730,22 +885,23 @@ You get:
 \item 3 Stimpaks (0 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Kingslayer}
-Your mecha's melee weapon (2-harm, hand, 2 weight) is particuarly powerful against enemy leaders, or perhaps it takes its power from your desire to destroy those who discourage your allies. Either way, when \textbf{the Kingslayer deals damage to an enemy leader or boss mecha} (your call), choose one of the following:
+\subsubsection{Improvement}
 \begin{itemize}
-\item Your target loses influence. A mook under his control flees.
-\item Your target slips up. Take $+1$ forward against them.
-\item Your attack is particularly destructive. Destroy one of the target's Mecha Items.
+\item get $+1$ Cool (max $+3$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Paragon move
+\item get a new Paragon move
+\item get a move from any class
+\item get a move from any class
 \end{itemize}
 
-\movedesc{Mecha Special Ability: I Said I'm Going To Pilot That Thing!}{deal fatal damage to an enemy mecha}{The GM will offer you a choice: destroy the mecha, or steal the mecha.}
-
-If you choose to steal the mecha, Roll+Cool:
-\rollresnofail{you become the new pilot of the target mecha. Any security systems are recalibrated to accept you as the owner, and the mecha is healed for 3-harm}
-{you obtain the mecha, which is healed for 2-harm, but one subsystem of the GM's choosing refuses to accept you.}
 
 
-
+% Spy Inspiration: James Bond, Black Widow, Solid Snake
 \subsection{Spy}
 
 {\itshape Cast your eyes around at the others. Do they suspect your
@@ -781,74 +937,91 @@ Choose one set:
 
 Your Max Health and Max Load are both 6+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Decieve somebody.
 \paragraph{Yang:} Share information with the party.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn. List the other characters' names. Go around again for
-Hx. On your turn:
-\begin{itemize} % how open you are
-\item One of them is your accomplice and knows about your
-  mission. Tell that player Hx$+2$. (They don't share the Mission move)
-\item Tell the others Hx$-1$. You can't risk people finding out about you.
-\end{itemize}
-On the others’ turns:
-\begin{itemize} % how interested you are
-\item Whatever number they tell you, add 1 to it and write it next to their
-  character’s name. You're a good judge of character.
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
+\begin{itemize}
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
 
-\subsubsection{Mission}
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you is my accomplice?" Whoever answers, offer that player 1-interest.
+\end{itemize}
+Tell the others $-1$-interest. You can't risk people finding out about you.
+
+After each other character's introduction:
+\begin{itemize}
+\item You're a good judge of character. Your interest in them is up to 1 different to whatever they offer you, your call.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with \linkmove{Agency}, \linkmove{Mission}, and \linkmove{Call For Support}. Choose one more move from the others below:
+
+\subsubsection{Agency}\label{sec:Agency}
+You take your orders from a shadowy government or private agency.
+
+Choose your Agency's field:
+\begin{itemize}
+\item Security (task: to protect interests)
+\item Environmentalism (task: to purify)
+\item Public Relations (task: to (mis)inform)
+\item Corporate (task: to profit)
+\item Journalism (task: to blackmail)
+\end{itemize}
+
+Choose 2 strengths and 1 weakness from the list below:
+\begin{itemize}
+\item Influence (influential\slash ignored)
+\item Money (wealthy\slash underfunded)
+\item Force (militaristic\slash pacifistic)
+\item Knowledge (omniscient\slash naive)
+\end{itemize}
+
+The Agency requires you to keep the fact you work for them a secret. At the end of each session,
+ask the following of each player whose character is not an accomplice.
+The GM picks an NPC and answers once on their behalf, and is never an accomplice.
+
+``Does your character know my true nature?''
+
+If a player answers ``Yes'', and explains how they found out, they mark experience and become an accomplice.
+
+For each ``No'' response, mark experience.
+
+\subsubsection{Mission}\label{sec:Mission}
 The Agency has given you a mission. Choose its objective:
 \begin{itemize}
-\item Destroy something or kill someone.
-\item Obtain something or someone.
-\item Protect something or someone.
+\item Destroy or kill \_\_\_. (disaster: they get too powerful)
+\item Obtain or steal \_\_\_. (disaster: it falls into the wrong hands)
+\item Protect \_\_\_ from attackers or kidnappers. (disaster: they're gone)
+\item Discover the truth about \_\_\_. (disaster: the case is frozen)
 \end{itemize}
 
-Also choose the Mission Importance (MI):
-\begin{enumerate}
-\item Failure will inconvenience the Agency.
-\item Failure will spell disaster for the Agency.
-\item Failure threatens national security.
-\item Failure threatens the safety of the planet.
-\end{enumerate}
+At the start of each session, the GM will give you a task to complete relating to the mission:
 
-Fill out any remaining details of the briefing with the GM. Carrying
-out your mission to the ignorance of the other player characters
-(apart from your accomplice) awards you mission points (mp). At the
-end of each session, tally up any mp you may have:
+If you complete it, get 3 \money , or 4 \money if it lead to the success of the mission. If you fail to complete it by the session end, mark one slip-up. Three slip-ups means disaster strikes.
 
+When the mission is completed, mark experience and choose a new mission.
+
+\movedesc{Call For Support}{contact the Agency to request assistance}{
+tell the GM what you want to achieve. The Agency will always give you support, but the GM
+will choose up to two from the following list, up to one if the request is covered by one of the Agency's
+strengths, or up to three if it is covered by their weakness.
 \begin{itemize}
-\item Reported your situation to the Agency: 1mp
-\item Reported new information to the Agency: MI $\times$ 1mp
-\item Allowed for the success of the mission: MI $\times$ 2mp
-\item Personally carried out the mission: MI $\times$ 3mp
-\end{itemize}
+\item It'll take time.
+\item It's not quite what you asked for.
+\item It'll cost you.
+\item First you'll need to \_\_\_.
+\end{itemize}}
 
-Then apply any penalties you may have incurred:
-\begin{itemize}
-\item Another player character became suspicious: 1mp
-\item A non-player character became suspicious: 2mp
-\item A player character was let in on the mission: 2mp
-\item A non-player character was let in on the mission: 3mp
-\item You had to kill someone you otherwise wouldn't, apart from an assassination target: 3mp
-\end{itemize}
-
-If the result is positive, mark one experience, and have that much \money wired to your account. If the result is negative, mark one slip-up. Three slip-ups mean disaster strikes. If the result is 0, you get neither profit nor disaster. When your mission ends, mark 1 bonus experience and get a new mission.
-
-\movenofail{Call For Support}{contact the Agency to request assistance}{Talk}{the Agency agrees to your request, or to do all they can.}{The Agency agrees, but: (choose one)
-  \begin{itemize}
-  \item It'll take time.
-  \item It's not quite what you asked for.
-  \item Your audacious request is badly received: $-1$mp at session end.
-  \end{itemize}
-}
-
-\movenofail{Gadgets}{reveal a mundane item in your possession to be a hidden gadget}{Tech}{it's just what you needed. Treat the mundane item as a Tech Item or single-use knockout weapon.}{it works, but choose one:
+\move{Gadgets}{reveal a mundane item in your possession to be a hidden gadget}{Tech}{it's just what you needed. Treat the mundane item as a Tech Item or single-use knockout weapon.}{it works, but choose one:
   \begin{itemize}
   \item It's been damaged and is less effective.
   \item It has an unexpected side-effect.
@@ -856,21 +1029,34 @@ If the result is positive, mark one experience, and have that much \money wired 
   \end{itemize}
 }
 
+\subsubsection{Concealed Carry}
+No level of examination will ever reveal any items you are hiding on your person.
+
+\movedesc{Pathological Liar}{bend the truth, tell a white lie, or provide alternative facts}{take +1 forward.}
+
 \subsubsection{Equipment}
 You get:
 \begin{itemize}
 \item Silenced 9mm (2-harm, hand, close, semi-auto, 1 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Longinus}
-Your mecha is equipped with a rifle (2-harm, close, loud, semi-auto, 2 weight). When you \textbf{attack a defenseless or suprised enemy at range} with the Longinus, you can choose to deal your damage or name a subsystem on the target and roll+Plan:
-\rollresnofail{deal your damage and the subsystem is temporarily disabled.}{the subsystem is temporarily disabled.}
+\subsubsection{Improvement}
+\begin{itemize}
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+3$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Spy move
+\item get a new Spy move
+\item get a move from any class
+\item get a move from any class
+\end{itemize}
 
-\subsubsection{Mecha Special Ability: Cloaking}
-Your mecha is equipped with the latest stealth systems, which supress engine noise and electromagnetic radiation, and bend light around the mecha, rendering you invisible to most detection systems. However, this can only be sustained for a couple minutes before the heat buildup threatens the pilot.
 
-
-
+% needs rethinking
+% Experiment Inspiration:
 \subsection{Experiment}
 {\itshape What \emph{are} you? Out of which fiery pit did you crawl?
   And for what reason were you cursed with that terrible insight that
@@ -905,27 +1091,36 @@ Choose one set:
 
 Your Max Health and Max Load are both 10+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Cause an agonising death.
 \paragraph{Yang:} Use your powers constructively.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn. List the other characters' names. Go around again for
-Hx. On your turn, choose 1 or both:
-\begin{itemize} % how open you are
-\item One of them was party to the experiments, either willingly or un-. Tell that player Hx$+2$.
-\item One of them has seen you lose control. Tell that player Hx$-2$
-\item Tell the others Hx$-1$. You keep yourself secret.
-\end{itemize}
-On the others’ turns:
-\begin{itemize} % how interested you are
-\item Whatever number they tell you, give it $-1$ or $+1$ and write it
-  next to their character’s name. Your choice for each.
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
+\begin{itemize}
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
 
-\subsubsection{Elemental Savant}
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you was party to the experiments?" Whoever answers, offer that player 1-interest.
+\item "Which one of you has seen me lose control?" Whoever answers, offer that player $-1$-interest.
+\end{itemize}
+Tell the others $-1$-interest. You keep yourself secret.
+
+After each other character's introduction:
+\begin{itemize}
+\item Your interests are unpredictable and inscrutible. Your interest in them is 1 more or 1 less than whatever they offer you, your call.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with \linkmove{Elemental Savant}, plus three moves from the others below:
+
+\subsubsection{Elemental Savant}\label{sec:Elemental Savant}
 You've always seen more than other people, but thanks to your technological enhancements, you can now commune with the spirit of a certain element. Choose one:
 \begin{itemize}
 \item The Flirtatious Mistress of the Cleansing Fire
@@ -935,15 +1130,21 @@ You've always seen more than other people, but thanks to your technological enha
 \end{itemize}
 The Spirit may be capricious, but they have your best interests at heart. You can call upon them for advice, but they may not directly meddle in mortal affairs.
 
-\movenofail{An Acquired Taste}{endure an effect or element which falls under your spirit's domain}{Hard}{your spirit protects you and you suffer no ill effects}{the effect or harm is reduced}
+\move{An Acquired Taste}{endure an effect or element which falls under your spirit's domain}{Hard}{your spirit protects you and you suffer no ill effects}{the effect or harm is reduced}
 
-\movenofail{It's Elementary}{let your spirit's power flow through you to accomplish a task}{Tech}{choose two:}{choose one:
+\move{Elementary}{let your spirit's power flow through you to accomplish a task}{Tech}{choose two:}{choose one:
 \begin{itemize}
   \item The effect you desire comes to pass
   \item You retain control.
   \item You avoid paying your spirit's price.
   \end{itemize}
 }
+
+\subsubsection {Move 4 Placeholder} % TODO
+
+\subsubsection {Move 5 Placeholder} % TODO
+
+\subsubsection {Move 6 Placeholder} % TODO
 
 \subsubsection{Equipment}
 You have a prototype rifle that spews your element (2-harm, close, loud, full-auto, two-handed, 3 weight) + an appropriate elemental tag.
@@ -966,32 +1167,23 @@ Your mecha's weapon depends on your chosen spirit:
 \paragraph{Cold:} Cryo Beam (1-harm, 2s-harm, close, full-auto, two-handed, 3 weight)
 \paragraph{Corrosion:} Acid Launcher (2-harm, 1s-harm, close, semi-auto, two-handed, 3 weight)
 
-\subsubsection{Mecha Special Ability}
-Your mecha's ability depends on your chosen spirit:
-
-\paragraph{Fire: Overheat}
-At any time you may take 1-harm to give yourself $+1$ forward.
-
-\paragraph{Lightning: Livewire Plating}
-When \textbf{your mecha makes contact with something} or vice versa,
-even indirectly via conductive materials, you may deal 4s-harm to that
-thing. This ability then needs to recharge for a few hours with the
-mecha offline to be used again.
-
-
-\paragraph{Cold: Absolute Zero}
-You may absorb all the entropy from the surrounding area, giving
-everyone in close range (including you) $-1$ ongoing.
-
-\paragraph{Corrosion: Contagion} 
-When \textbf{your mecha makes contact with a mecha or other electronic
-  system}, you may inject a viral software package into it. If you do,
-Roll+Tech: \rollresnofail{you gain control of the system, and it gains
-  this move.}{the system is disabled.} This ability then needs to
-recharge for a few hours with the mecha offline to be used again.
+\subsubsection{Improvement}
+\begin{itemize}
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+3$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Experiment move
+\item get a new Experiment move
+\item get an Agency, \linkmove{Mission}, and \linkmove{Call For Support}
+\item get a Brawler move
+\end{itemize}
 
 
 
+% Martial Artist Inspiration: Bruce Lee, Avatar tLA
 \subsection{Martial Artist}
 {\itshape Your comrades are weak. Sure, they may be hotshots with
   their guns, gadgets, or even their fists, but they each have a
@@ -1024,39 +1216,82 @@ Choose one set:
 
 Your Max Health and Max Load are both 8+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Kill a defenseless or surrendered enemy.
 \paragraph{Yang:} Help someone else grow.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn. List the other characters' names. Go around again for
-Hx. On your turn, choose 1, 2, or all 3:
-\begin{itemize} % how open you are
-\item One of them is your training partner. Tell that player Hx$+1$
-\item One of them insulted your school. Tell that player Hx$-1$
-\item One of them you want to impress. Tell that player Hx$+2$.
-\item Tell the others Hx${=}0$
-\end{itemize}
-On the others’ turns:
-\begin{itemize} % how interested you are
-\item Whatever number they tell you write it next to their character’s
-  name.
-\end{itemize}
-
-\subsubsection{Fists of Fury}
-Your unarmed strike counts as a weapon: (2-harm, intimate, fused, two-handed, 0 weight).
-
-\movenofail{Whirlwind Strike}{launch an attack against each enemy in your vicinity}{Fast}{do your damage to each of them and force them back.}{deal your damage to half of them, rounded down}
-
-\movenofail{Focus}{concentrate your energy into your fists}{Hard}{Hold 3}{Hold 1}
-Spend your hold when you make an unarmed attack to choose one of the following enhancements for that attack:
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
 \begin{itemize}
-\item Your energy resonates through armour. Gain $+1$ piercing.
-\item Your energy increases the impact of your fists. Gain the precise tag.
-\item Immediately close the distance between you and a target in close range.
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
+
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you trains with me?" Whoever answers, offer that player 1-interest.
+\item "Which one of you insulted my school?" Whoever answers, offer that player $-1$-interest.
+\end{itemize}
+Tell the others 0-interest.
+
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I want to impress you." Your interest in them is 1 more than whatever they offer you.
+\item Your interest in the others is whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with \linkmove{Fighting Style}, plus three moves from the others below:
+
+% For Martial Artist, maybe focus more on a code of ethics,
+% possibly using precepts from the Cleric's Deity
+% or consider merging with swordsmaster
+
+\subsubsection{Fighting Style}
+You were trained in some ancient style of martial arts. Give your style a name.
+Using your fighting style counts as wielding a weapon: (2-harm, intimate, fused, two-handed, 0 weight).
+
+Choose 2 from the list below:
+\begin{itemize}
+\item Your style trained you for fighting armoured foes. $+2$ piercing.
+\item Your style focuses on disarming foes. When you deal damage to an enemy, name one item they're holding. They drop it.
+\item Your style relies on speed to overwhelm your foes. +precise.
+\item Your style emphasises the importance of protecting others. When you \linkmove{Lookout}, hold $+1$, even on a $6-$.
+\item Your style requires great discipline to master. When you \linkmove{Persevere}, take +1 forward.
+\end{itemize}
+
+Choose 1 from the list below:
+\begin{itemize}
+\item A rival has sworn to destroy you.
+\item Your master has turned his back on you.
+\item Your school's arts are forbidden and dangerous.
+\end{itemize}
+
+%\move{Focus}{concentrate your energy into your fists}{Hard}{Hold 3}{Hold 1}
+%Spend your hold when you make an unarmed attack to choose one of the following enhancements for that attack:
+%\begin{itemize}
+%\item Your energy resonates through armour. Gain $+1$ piercing.
+%\item Your energy increases the impact of your fists. Gain the precise tag.
+%\item Immediately close the distance between you and a target in close range.
+%\end{itemize}
+
+\move{Ancestral Spirits}{meditate and consult those who came before you for guidance}{Cool}
+{The spirits give you clear advice. Take +1 forward when following it.}
+{The spirits give you vague or conflicting advice.}
+Either way, the spirits may ask you a question in return. (You don't have to tell them the truth)
+
+\move{Fleet of Foot}{run across a surface that cannot hold your weight}{Fast}
+{you make it across gracefully and without trouble.}
+{you make it across, but expose yourself to danger somehow. The GM will tell you how.}
+
+\subsubsection{Move 4 Placeholder} % TODO
+
+\subsubsection{Move 5 Placeholder} % TODO
+
+\subsubsection{Move 6 Placeholder} % TODO
 
 \subsubsection{Equipment}
 
@@ -1065,13 +1300,29 @@ You get:
 \item 1 First Aid Kit (1 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Coiled Dragon}
-Your mecha is equipped with a set of Nunchaku. (2-harm, intimate, hand, two-handed, 1 weight) They afford such a high freedom of movement that they count as your fists for the purposes of your moves.
+% doesn't make much sense any more
+%\subsubsection{Mecha Signature Weapon: Coiled Dragon}
+%Your mecha is equipped with a set of Nunchaku. (2-harm, intimate, hand, two-handed, 1 weight) They afford such a high freedom of movement that they count as your fists for the purposes of your moves.
 
-\movedesc{Mecha Signature Ability: Reversal}{spend a Defensive Measure to take down guided missiles}{you may turn the missiles back at their owner.}
+%\movedesc{Mecha Signature Ability: Reversal}{spend a Defensive Measure to take down guided missiles}{you may turn the missiles back at their owner.}
+
+\subsubsection{Improvement}
+\begin{itemize}
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+3$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Martial Artist move
+\item get a new Martial Artist move
+% TODO \item get 
+\item get a Bodyguard and \linkmove{Command}.
+\end{itemize}
 
 
 
+% Techie Inspiration: Scotty, AW Savvyhead, TF2 Engineer
 \subsection{Techie}
 {\itshape You know what Mecha World is about: Mecha. Big mecha, small
   mecha, mecha with big, fuck-off guns, or mecha with clouds of
@@ -1103,35 +1354,53 @@ Choose one set:
 
 Your Max Health and Max Load are both 6+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Kill someone in an unorthadox way.
 \paragraph{Yang:} Repair something.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn. List the other characters' names. Go around again for
-Hx. On your turn:
-\begin{itemize} % how open you are
-\item Choose the one you consider the most intelligent. Tell that player Hx$+1$
-\item Tell the others Hx$-1$. You tend to alienate others.
-\end{itemize}
-On the others’ turns:
-\begin{itemize} % how interested you are
-\item Choose the character you figure for the biggest potential
-  problem. Whatever number that player tells you, give it $+1$ and write
-  it next to the character’s name.
-\item Everyone else, whatever number they tell you, give it $-1$ and
-  write it next to their character’s name. You’ve got other stuff to
-  do and other stuff to learn.
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
+\begin{itemize}
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
 
-\movedesc{Prototype}{draw up designs for a new mecha weapon or subsystem}{describe what it does. Prototypes are always possible, but the GM will impose 1 to 4 of the following restrictions:}
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you has commissioned my services for a project?" Whoever answers, offer that player 1-interest.
+\end{itemize}
+Tell the others $-1$-interest. You tend to alienate others.
+
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I think you're the most intelligent." Your interest in them is 1 more than whatever they offer you.
+\item Choose one and tell them "I figure you for the biggest potential problem." Your interest in them is 1 more than whatever they offer you.
+\item You’ve got other stuff to do and other stuff to learn. Your interest in the others is 1 less than whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with four moves from the ones below:
+
+\subsubsection{Technical Specialty}\label{sec:Technical Specialty}
+Choose an area of expertise:
+\begin{itemize}
+\item Pharmacology and Virology
+\item Physics and Metaphysics
+\item Computer Science and Cryptography
+\item Engine Mechanics and Ballistics
+\item Aeronautics and Astronautics
+\end{itemize}
+When you first encounter an important phenomenon (your call) covered by your area of expertise you can ask the GM any one question about it; the GM will answer truthfully. The GM may then ask you where you learned of or previously encountered the phenomenon.
+
+\movedesc{Prototype}{have time and a supply of materials}{you may draw up designs for a new technological marvel. Describe what it does to the GM. Prototypes are always possible, but the GM may impose one or more of the following restrictions:}
 \begin{itemize}
 \item It's going to take time.
 \item It will only work under certain circumstances.
 \item You'll need the help of someone, the GM will say who.
-\item It's going to cost a lot of money.
+\item It's going to cost you.
 \item The best you can do is a less powerful or reliable version.
 \item You’ll have to deconstruct something for the parts, the GM will say what.
 \end{itemize}
@@ -1145,9 +1414,30 @@ On the others’ turns:
 \item You’ll have to deconstruct something for the parts, the GM will say what.
 \item You put yourself in danger.
 \end{itemize}}
-{your technobabble confuses and alienates those present. Take $-1$ forward to social interactions with them.}
 
+% maybe getting rid of weight
 \movedesc{Lug}{make a move whilst encumbered}{instead of making the Encumbrance move, you may throw at least 1 weight (at an enemy, to a safe location etc), and roll without penalty.}
+
+\subsubsection{Man's Better Friend}
+You have a mechanical companion. It cannot fight, but it moves autonomously and follows complex orders, can record and produce sound, and can pick up and carry appropriately sized objects. Choose two extra abilities:
+\begin{itemize}
+\item It can turn invisible.
+\item It can fly.
+\item It can record video.
+\item You can access its feeds remotely.
+\item It can help you fight. When you \linkmove{Brawl}, take +1 to your roll.
+\item It can release an electical shock to stun anyone touching its metal frame. (2s-harm, fused, intimate)
+\end{itemize}
+
+\move{Jury Rig}{use a piece of equipment for something other than its intended purpose}{Tech}
+{choose one:}
+{choose one, and the GM chooses one:
+\begin{itemize}
+\item The equipment fails in its primary purpose.
+\item The equipment is damaged beyond repair.
+\item A previously-unknown function of the equipment is revealed.
+\item The equipment reacts dangerously.
+\end{itemize}}
 
 \subsubsection{Equipment}
 Choose your weapon:
@@ -1163,15 +1453,23 @@ Choose your defenses:
 \item Full Plate (2 armour, 3 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Compensator}
-The Compensator is a melee weapon (2-harm, hand, 2 weight). Describe its look.
-When you inflict damage with the Compensator, gain 1 balance. You can spend balance to restore a depleted Defensive Measure to a nearby ally.
+\subsubsection{Improvement}
+\begin{itemize}
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+3$)
+\item get $+1$ Plan (max $+2$)
+\item get a new Techie move
+\item get a new Techie move
+\item get a second \linkmove{Technical Specialty}
+% TODO \item get a 
+\end{itemize}
 
-\move{Mecha Special Ability: Grey Goo}{release a cloud of nanomachines}{Tech}
-{the cloud gets to work, dismantling enemy mecha and repairing friendly ones.}
-{the cloud only has enough processing power to handle one task, repair or destuction. Choose which one.}
-{most of the cloud malfunction and self-destruct, but a small portion go haywire, repairing enemies and dismantling allies.}
 
+
+% Tactician Inspiration: Lelouch, Maou, Light, Sora, 
 \subsection{Tactician}
 {\itshape How do you see the battlefield? Not just as the chaos of
   gunfire and explosions, but as something more\ldots concerted. You
@@ -1203,35 +1501,38 @@ Choose one set:
 
 Your Max Health and Max Load are both 4+Hard.
 
-\subsubsection{Personal Goal}
+\subsubsection{Philosophy}
 Choose one:
 \paragraph{Yin:} Kill someone to tie up loose ends.
 \paragraph{Yang:} Avoid an unecessary death.
 
-\subsubsection{Shared History}
-Everyone introduces their characters by name, look and outlook. Take
-your turn. List the other characters' names. Go around again for
-Hx. On your turn:
-\begin{itemize} % how open you are
-\item Choose the one you consider the most capable. Tell that player Hx$+1$
-\item Tell the others Hx${=}0$.
-\end{itemize}
-On the others’ turns, choose 1, 2, or all 3:
-\begin{itemize} % how interested you are
-\item One of them you've been studying closely for some time. Whatever
-  number that player tells you, ignore it; write Hx$+3$ next to the
-  character’s name instead.
-\item One of them evidently distrusts you. Whatever number that player
-  tells you, ignore it; write Hx$+3$ next to the character’s name
-  instead.
-\item One of them you consider unpredictable. Whatever number that
-  player tells you, ignore it; write Hx$+3$ next to the character’s name
-  instead.
-\item Everyone else, whatever number they tell you, give it $+1$ and
-  write it next to their character’s name. You've done your homework.
+\subsubsection{Introductions}
+At the start of the first session, or when a new character joins, go round for introductions.
+When you introduce your character, answer the following questions out loud:
+\begin{itemize}
+\item What do you look like? What impression does that give?
+\item What do people think you're like? What about after they talk to you for five minutes?
+\item In what way is people's first impression of you wrong or not quite the full story?
 \end{itemize}
 
-\subsubsection{Bodyguard}
+Then ask at least one of the following of the other characters:
+\begin{itemize}
+\item "Which one of you evidently distrusts me?" Whoever answers, offer that player 1-interest.
+\item "Which one of you do I consider the most capable?" Whoever answers, offer that player 1-interest.
+\end{itemize}
+Tell the others 0-interest.
+
+After each other character's introduction:
+\begin{itemize}
+\item Choose one and tell them "I've been studying you closely for some time." Your interest in them is 2 regardless of what they offer you.
+\item Choose one and tell them "I consider you unpredictable." Your interest in them is 2 regardless of what they offer you.
+\item You’ve done your homework. Your interest in the others is 1 more than whatever they offer you.
+\end{itemize}
+
+\subsubsection{Starting Moves}
+You start with \linkmove{Bodyguard} and \linkmove{Command}, plus two moves from the others below:
+
+\subsubsection{Bodyguard}\label{sec:Bodyguard}
 You have a bodyguard: a loyal protector who will serve you to the death. Name them and give them a one-line description.
 
 Choose a base:
@@ -1254,17 +1555,18 @@ Choose as many weaknesses as their Humanity:
 
 \textit{Cowardly, insane, scarred, oblivious, ambitious, stubborn, lame.}
 
-\subsubsection{Command}
-As well as protecting you from attackers, your bodyguard can also attack targets for you. When you \textbf{use your bodyguard as a weapon}, choose an appropriate combat move and Roll+Cunning instead of whatever that move demands. Your bodyguard deals damage equal to their Training.
+\subsubsection{Command}\label[sec:Command]
+As well as protecting you from attackers, your bodyguard can also attack targets for you. When you \textbf{use your bodyguard as a weapon}, Roll+Cunning for any moves triggered instead of whatever that move demands. Your bodyguard inflicts harm equal to their Training.
 
 Otherwise, when you work with your bodyguard on something they're trained in:
 \begin{itemize}
 \item and you attack the same target, add their Training to your damage.
 \item and you take damage, add their armour to your armour.
-\item and you Defy, add their cunning to your roll.
+\item and you put your heads together, add their Cunning to any roll you make.
+%\item and you Defy, add their cunning to your roll.
 \end{itemize}
 
-\move{Best-Laid Plans}{start the session}{Plan}{hold 3}{hold 2}{hold 1, plus whatever the GM says when you spend it}
+\movefail{Best-Laid Plans}{start the session}{Plan}{hold 3}{hold 2}{hold 1, plus whatever the GM says when you spend it}
 
 You may spend your hold 1-for-1 at any time during the session to have one of the following effects occur, either because you planned it or by pure luck:
 \begin{itemize}
@@ -1273,7 +1575,12 @@ You may spend your hold 1-for-1 at any time during the session to have one of th
 \item You come across a needed item.
 \end{itemize}
 
-\movenofail{Mission Briefing}{explain your plan to the other players}{Talk, describing up to 3 details.}{the plan is foolproof, and fills your comrades with hope: everyone present takes $+1$ forward now, and again when sticking to the plan.}{the plan is sound: everyone present takes $+1$ when sticking to it.}
+% Idea: give each character a role, and they get +1 forward when acting in accordance with their role?
+\move{Mission Briefing}{explain your plan to the other players}{Talk, describing up to 3 details.}{the plan is foolproof, and fills your comrades with hope: everyone present takes $+1$ forward now, and again when sticking to the plan.}{the plan is sound: everyone present takes $+1$ when sticking to it.}
+
+\movedesc{Attention to Detail}{analyse a situation or try to figure someone out}{you are not restricted to the questions on the list.}
+
+\subsubsection{Move 6 Placeholder} % TODO
 
 \subsubsection{Equipment}
 You get:
@@ -1284,9 +1591,16 @@ You get:
 \item 3 Tactical Grenades (0 weight)
 \end{itemize}
 
-\subsubsection{Mecha Signature Weapon: Pods}
-Your mecha is equipped with six autonomous attack drones known as ``Pods''. Each has a burst-fire weapon (1-harm, close, full-auto, 0 weight) and 1 HP. You can command the pods to attack in unison, or assist allies. If you \textbf{use a Pod to try to shoot down an incoming Guided Missile}, Roll+Plan:
-\rollresnofail{you succesfully destroy the incoming missile}{the missile is shot down, but the Pod is destroyed in the attempt}
-
-\subsubsection{Mecha Special Ability: Farsight}
-Your mecha is equipped with impressive visual systems. You can see in all electromagnetic spectra, as well as seeing any objects visible with the naked eye as though they were right in front of you.
+\subsubsection{Improvement}
+\begin{itemize}
+\item get $+1$ Cool (max $+2$)
+\item get $+1$ Talk (max $+2$)
+\item get $+1$ Hard (max $+2$)
+\item get $+1$ Fast (max $+2$)
+\item get $+1$ Tech (max $+2$)
+\item get $+1$ Plan (max $+3$)
+\item get a new Tactician move
+\item get a new Tactician move
+\item get an Agency, \linkmove{Mission}, and \linkmove{Call For Support}
+\item get a Paragon move
+\end{itemize}

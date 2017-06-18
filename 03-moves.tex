@@ -1,27 +1,28 @@
 \section{Moves}
-The moves are the blood of a *-World game, and they keep the game,
+The moves are the blood of a PtbA game, and they keep the game,
 well, moving. Any move consists of a trigger, and an action. A success
 generally means the player gets their desired outcome, a partial
 success is still a success, but a slightly worse overall outcome, and
-a failure means the GM can make a move.
+a miss means the GM can make a move.
 
 Class- and Mecha-specific moves will be treated in their own sections,
 so the basic moves accessible to everyone (human or giant robot) will
 be detailed here.
 
+
 \subsection{Basic Moves}
 
-\movenofail{Brawl}{trade blows or blades with someone}{Hard}
+
+\move{Brawl}{trade blows or blades with someone}{Hard}
 {deal your damage to the enemy and choose one:
 \begin{itemize}
-\item Deal an extra 1-harm or force the enemy into a nearby danger
-\item Avoid a counterattack
+\item Deal an extra 1-harm
+\item Avoid their attack
 \end{itemize}}
-{deal your damage to the enemy but receive a counterattack}
+{deal your damage to the enemy but they also attack you}
 
-Brawl is for dealing with ruffians in melee when diplomatic negotions
-break down. There's no trickery or deceit here; your opponent is fully
-aware of your attack, and may the strongest fighter win.
+Brawl is for dealing with ruffians in melee when diplomatic negotions break down.
+Taking someone by surprise or attacking a helpless enemy isn't Brawl; you just deal your damage.
 
 \paragraph{Example}
 \begin{dialogue}
@@ -49,54 +50,94 @@ aware of your attack, and may the strongest fighter win.
   electricity. What do you do?
 \end{dialogue}
 
-\movenofail{Riposte}{anticipate a chance to counterattack}{Fast}
-{deal your damage to the enemy and avoid their attack}
-{choose one:
+
+\move{Lookout}{protect an ally, object or location from an enemy}{Fast}
+{hold three}
+{hold one}
+Spend your hold 1-for-1 on the following effects when your protectee comes under fire:
 \begin{itemize}
-\item Deal damage to your enemy
-\item Avoid their attack
+\item Deal damage to the enemy
+\item Divert the enemy's attention to yourself
+\item Give 1-armour to the attack's target, or retain hold of it
+\end{itemize}
+
+%A Riposte is a more calculated melee move, which involves anticipating
+%your opponent's attack. In this way you can more easily avoid damage,
+%and even intercept attacks not meant for you, but you're not as
+%dangerous yourself. A riposte triggers whenever you're fighting
+%defensively.
+%
+%\paragraph{Example}
+%\begin{dialogue}
+%  \speak{GM} Yuki, you hear a voice from behind you. ``Here you are,
+%  my little kitten. Strayed so far from your friends? Why don't you
+%  play with me for a while?''
+%  
+%  \speak{Yuki} I only know one guy who spouts such tired lines! I spin
+%  around to face him.
+%
+%  \speak{GM} He just likes to be theatrical, okay? As you guessed,
+%  you're faced by Captain Flintlock, leader of the Imperial Invasion
+%  Cohort. He's got his rapier drawn and is advancing towards you.
+%
+%  \speak{Yuki} This guy gives me the creeps. I'm going to deflect his
+%  attack with my antique katana and run off.
+%
+%  \speak{GM} A Riposte? Roll+Fast, then.
+%
+%  \speak{Yuki} I'm not sure, I'm not really attacking him, just making
+%  my escape.
+%
+%  \speak{GM} Hmm, if you're not counterattacking, then it's not really
+%  a Riposte. Let's make it a Dash to get your defense up in
+%  time and flee before he gets you.
+%\end{dialogue}
+
+
+\move{Aim}{take aim and fire with a semi-auto or single-action weapon}{Plan}
+{deal your damage to the enemy}
+{deal your damage but choose one:
+\begin{itemize}
+\item You take what you can get: $-1$-harm
+\item You have to displace to get a good shot
+\item You have to empty your clip or throw another one
 \end{itemize}}
 
-A Riposte is a more calculated melee move, which involves anticipating
-your opponent's attack. In this way you can more easily avoid damage,
-but you're not as dangerous yourself. A riposte triggers whenever
-you're fighting defensively.
+Aiming is the most conservative method of fighing at range, as well as
+how you use single-action and thrown weapons. Note this move is
+triggered even if the enemy is unaware of you. Aiming is \emph{hard},
+you know.
 
 \paragraph{Example}
 \begin{dialogue}
-  \speak{GM} Yuki, you hear a voice from behind you. ``Here you are,
-  my little kitten. Strayed so far from your friends? Why don't you
-  play with me for a while?''
-  
-  \speak{Yuki} I only know one guy who spouts such tired lines! I spin
-  around to face him.
+  \speak{GM} Alright, Agent 0, the chance you've been waiting for is
+  here. You see through your scope the Yakuza boss you've been tailing
+  getting out of his armoured limo.
 
-  \speak{GM} He just likes to be theatrical, okay? As you guessed,
-  you're faced by Captain Flintlock, leader of the Imperial Invasion
-  Cohort. He's got his rapier drawn and is advancing towards you.
+  \speak{Agent 0} You screwed up for the last time. I take the shot.
 
-  \speak{Yuki} This guy gives me the creeps. I'm going to deflect his
-  attack with my antique katana and run off.
+  \speak{GM} Sounds like Aim to me.
 
-  \speak{GM} A Riposte? Roll+Fast, then.
+  \speak{Agent 0} 8. Well, I guess I don't need my ammo on this
+  distant rooftop. I'll empty the clip.
 
-  \speak{Yuki} I'm not sure, I'm not really attacking him, just making
-  my escape.
+  \speak{GM} Fair enough. The gangsters begin to scatter as the sound
+  of your rifle rings out. Your last shot meets its mark, splattering
+  his brains across the alley, but as you scan the carnage, you notice
+  your contact, Kensuke, was also there, and you just shot him in the
+  leg with a stray bullet.
 
-  \speak{GM} Hmm, if you're not counterattacking, then it's not really
-  a Riposte. Let's make it a Dash to get your defense up in
-  time and flee before he gets you.
+  \speak{Agent 0} Oh, that's not good.
 \end{dialogue}
 
-\move{Burst}{spray and pray with an semi- or fully-automatic weapon}{Cool}
+
+\move{Burst}{spray and pray with a semi- or fully-automatic weapon}{Cool}
 {deal your damage to the enemy}
-{choose two:
+{deal your damage and choose one:
 \begin{itemize}
-\item Deal damage to your enemy
 \item Don't hit any unintended targets
 \item Still have ammo in the gun
 \end{itemize}}
-{choose one}
 
 You don't need to be a better shot, you just need to fire more
 bullets! Full-auto weapons are hard to control, and unless you're
@@ -129,43 +170,8 @@ weapons, if you feel like hurting everything in the room except you.
   \speak{Bruno} Whoops.
 \end{dialogue}
 
-\movenofail{Aim}{take aim and fire with a semi-auto or single-action weapon}{Plan}
-{deal your damage to the enemy}
-{deal your damage but choose one:
-\begin{itemize}
-\item You take what you can get: $-1$-harm
-\item You have to displace to get a good shot
-\item You have to empty your clip or throw another one
-\end{itemize}}
 
-Aiming is a more conservative method of fighing at range, as well as
-how you use single-action and thrown weapons. Note this move is
-triggered even if the enemy is unaware of you. Aiming is \emph{hard},
-you know.
-
-\paragraph{Example}
-\begin{dialogue}
-  \speak{GM} Alright, Agent 0, the chance you've been waiting for is
-  here. You see through your scope the Yakuza boss you've been tailing
-  getting out of his armoured limo.
-
-  \speak{Agent 0} You screwed up for the last time. I take the shot.
-
-  \speak{GM} Sounds like Aim to me.
-
-  \speak{Agent 0} 8. Well, I guess I don't need my ammo on this
-  distant rooftop. I'll empty the clip.
-
-  \speak{GM} Fair enough. The gangsters begin to scatter as the sound
-  of your rifle rings out. Your last shot meets its mark, splattering
-  his brains across the alley, but as you scan the carnage, you notice
-  your contact, Kensuke, was also there, and you just shot him in the
-  leg with a stray bullet.
-
-  \speak{Agent 0} Oh, that's not good.
-\end{dialogue}
-
-%% \movenofail{Hold Fast}{stand your ground}{Cool} % alternate name: Suffer
+%% \move{Hold Fast}{stand your ground}{Cool} % alternate name: Suffer
 %% {you maintain the status quo despite outside forces}
 %% {the GM will offer you a choice. You can maintain the status quo, but you will have to suffer attrition or give up something important. The GM will say what.}
 
@@ -179,7 +185,12 @@ you know.
 %% negotiations, straight up harm from lethal radiation, important
 %% information like your secret identity, or any number of other things.
 
-\movenofail{Persevere}{do something under fire, or dig in to endure fire}{Cool}{you do it.}{you flinch, hesitate, or stall: the GM can offer you a worse outcome, a hard bargain, or an ugly choice.} 
+
+\move{Persevere}{do something in a stressful situation}{Cool}{you do it.}{you flinch, hesitate, or stall: the GM can offer you a worse outcome, a hard bargain, or an ugly choice.} 
+
+Ganbare! You must Persevere when the situation really doesn't look good for you. You don't usually have to persevere just to do something in a combat situation, unless the stakes are really high.
+
+%% make it obvious that this is the ``make something more difficult'' move for the GM?
 
 \paragraph{Example}
 \begin{dialogue}
@@ -196,18 +207,19 @@ you know.
   \speak{GM} Hmm, okay. Well, I'd say you're acting under fire. You
   can't risk harming the princess. Roll+Cool, if you please.
 
-  \speak{LeVallier} Fair enough. 9.
+  \speak{LeVallier} Fair enough. 11.
 
-  \speak{GM} Alright, hmm, let's go for an ugly choice. Either the
-  Count has a chance to get a shot off, missing Amelia's vitals, but
-  gravely wounding her, or your bullet goes straight through him,
-  killing him instantly but hitting a poorly-placed control panel
-  which sets the whole facility to self-destruct.
-
-  \speak{Levallier} That \emph{is} ugly\ldots
+  \speak{GM} Nice. You whip out your pistol and point it straight at him. 
+  He looks shocked---he wasn't expecting you to be so brazen, and he
+  moves his gun away from the princess to train it on you. Give us an
+  Aim roll and let's see how dead he is.
 \end{dialogue}
 
-\movenofail{Fast Talk}{make something up on the spot}{Talk}{everyone believes you.}{you raise suspicion, but people go along with you, for now.}
+
+\move{Bargain}{strike a deal with someone}{Talk}{they'll hold up their end of the bargain, and expect you to do the same.}{they want to see you keep your promise first, or at least concrete assurance that you will.}
+
+
+\move{Fast Talk}{make something up on the spot}{Talk}{everyone believes you.}{you raise suspicion, but people go along with you, for now.}
 
 \paragraph{Example}
 \begin{dialogue}
@@ -230,48 +242,18 @@ you know.
   \speak{Sanya} Tsk. Now I've got to shake this guy somehow\ldots
 \end{dialogue}
 
-\movenofail{Taunt}{insult or make a snarky comment at someone}{Talk}
-{choose two:
-\begin{itemize}
-\item you provoke them into making an error
-\item you provoke them into revealing information
-\item you don't provoke a retaliation
-\end{itemize}}
-{choose one}
+\move{Dash}{try to evade a danger or get somewhere quickly}{Fast}{you're fast enough.}{you make it, but your hesitation costs you. You leave something behind, or end up in a vulnerable spot, GM's choice.}
 
-Bad guys have feelings too, you know. You can take advantage of that!
-With a well-placed burn or witty repartee, villains are prone to all
-sorts of blunders. Just watch out you don't get burned yourself.
-
-\paragraph{Example}
-\begin{dialogue}
-  \speak{Minori} ``Enough is enough, councillor Hakumoto! All your
-  talk about the restoration of humanity was only so much hot air. In
-  the end, you're just a senile old fool, scared of his own
-  mortality!''
-
-  \speak{GM} Ouch. While I get him some burn cream, roll Taunt, if you
-  don't mind.
-
-  \speak{Minori} 13! I'll take the information, no retaliation,
-  please.
-
-  \speak{GM} ``Fooools!'' Hakumoto flies into a rage. ``You know
-  nothing! The Humanity Restoration Project is only the beginning! As
-  we speak, the sucessful samples are being exported from this
-  facility. They're going to do very well out in the field. Very well
-  indeed!'' He laughs madly.
-
-  \speak{Minori} Damn, we need to get down to the cargo bay right now!
-\end{dialogue}
-
-\movenofail{Dash}{try to evade a danger or get somewhere quickly}{Fast}{you're fast enough.}{you make it, but your hesitation costs you. You leave something behind, or end up in a vulnerable spot, GM's choice.}
-
-\movenofail{Share Memories}{consult your accumulated knowledge about something}{Plan}{the GM will tell you something interesting and useful about the subject relevant to your situation.}{the GM will only tell you something interesting---it's on you to make it useful.}
+\move{Flashback}{consult your accumulated knowledge about something}{Plan}{the GM will tell you something interesting and useful about the subject relevant to your situation.}{the GM will only tell you something interesting---it's on you to make it useful.}
 
 The GM might ask you ``How do you know this?'' Tell them the truth, now.
 
-\movenofail{Perceive Truths}{closely study a situation or person}{Plan}{ask the GM 3 questions from the list below.}{ask 1.}
+%\move{Connect}{try to figure someone out}{Talk}{ask their player 3 questions from the following list.}{ask 1.}
+%\begin{itemize}
+%\item 
+%\end{itemize}
+
+\move{Situational Analysis}{stop to take in or investigate your surroundings}{Plan}{ask the GM 3 questions from the list below.}{ask 1.}
 
 Either way, take $+1$ forward when acting on the answers.
 
@@ -298,34 +280,33 @@ Either way, take $+1$ forward when acting on the answers.
 %% \rollresnofail{you do what you set out to, the threat doesn’t come to bear}
 %% {you stumble, hesitate, or flinch: the GM will offer you a worse outcome, hard bargain, or ugly choice}
 
-\movenofail{Jury Rig}{use a piece of equipment for something other than its intended purpose}{Tech}
-{you succeed}
-{you succeed, but choose one:
-\begin{itemize}
-\item you damage the equipment beyond repair
-\item you set off a previously-unknown function of the equipment
-\item you hurt yourself in the process
-\end{itemize}}
+% Aid or Interfere
+
+%% Missing Moves: Seduce or Manipulate/Parley
+
 
 \subsection{Special Moves}
 
+
 \movedesc{Intermission}{settle in to rest and maintain your mecha}{restore all depleted Mecha Items. You may also change the type of one of them. If you leveled up, take care of that. When you wake from at least a few uninterrupted hours of sleep heal damage equal to half your max HP.}
 
-\movedesc{Level Up}{mark your 5th experience point}{increment your level and reset your experience to zero. The next Intermission, choose a new advanced move from your class.}
 
-\movedesc{Encumbrance}{make a move while carrying weight}{you may be encumbered. If your weight carried is:}
-\begin{itemize}
-\item Equal to or less than your load, you suffer no penalty
-\item Less than or equal to your load$+2$, you take $-1$ ongoing until you lighten your burden
-\item Greater than your load$+2$, you have a choice: drop at least 1 weight and roll at $-1$, or automatically fail
-\end{itemize}
+% Change to more AW-like leveling
+%\movedesc{Level Up}{mark your 5th experience point}{increment your level and reset your experience to zero. The next Intermission, choose a new advanced move from your class.}
 
-\move{Source Parts}{browse a store's catalogue for mundane mecha parts, personal items, or repairs}{Talk}
-{they have what you need, and you can get a good deal}
-{they have what you need, for about what you expected}
-{they have what you need, but it costs more than you thought it would}
+%\movedesc{Encumbrance}{make a move while carrying weight}{you may be encumbered. If your weight carried is:}
+%\begin{itemize}
+%\item Equal to or less than your load, you suffer no penalty
+%\item Less than or equal to your load$+2$, you take $-1$ ongoing until you lighten your burden
+%\item Greater than your load$+2$, you have a choice: drop at least 1 weight and roll at $-1$, or automatically fail
+%\end{itemize}
 
-\movenofail{Rare Parts}{make a request to a store for rare mecha parts}{Talk and describe what you're looking for}
+
+%% rolling for this isn't interesting, and opens the gates for xp grinding
+\movedesc{Source Parts}{browse a store's catalogue for mundane mecha parts, personal items, or repairs}{you can get it for market price.}
+
+
+\move{Rare Parts}{make a request to a store for rare mecha parts}{Talk and describe what you're looking for}
 {they happen to have it in, or the nearest thing that exists, and you can have it for the right price}
 {they have it, or can get it, but there's a catch. The GM will choose one:
 \begin{itemize}
@@ -333,6 +314,7 @@ Either way, take $+1$ forward when acting on the answers.
 \item It's not quite what you wanted.
 \item It comes with strings attached, or a favour owed.
 \end{itemize}}
+
 
 \movedesc{End Of Session}{reach the end of the session}{answer the following three questions as a group}
 \begin{itemize}

@@ -62,29 +62,32 @@
 
 \newcommand{\movedesc}[3]{
 \subsubsection{#1}
+\label{sec:#1}
 When you \textbf{#2}, #3}
 
-\newcommand{\rollresnofail}[2]{
+\newcommand{\linkmove}[1]{\hyperref[sec:#1]{\textbf{#1}}}
+
+\newcommand{\rollres}[2]{
 \begin{itemize}
 \item On a 10+, #1
 \item On a 7--9, #2
 \end{itemize}}
 
-\newcommand{\rollres}[3]{
+\newcommand{\rollresfail}[3]{
 \begin{itemize}
 \item On a 10+, #1
 \item On a 7--9, #2
 \item On a 6 or less, #3
 \end{itemize}}
 
-\newcommand{\move}[6]{
-\movedesc{#1}{#2}{Roll +#3}
-\rollres{#4}{#5}{#6}
+\newcommand{\movefail}[6]{
+\movedesc{#1}{#2}{Roll+#3}
+\rollresfail{#4}{#5}{#6}
 }
 
-\newcommand{\movenofail}[5]{
-\movedesc{#1}{#2}{Roll +#3}
-\rollresnofail{#4}{#5}
+\newcommand{\move}[5]{
+\movedesc{#1}{#2}{Roll+#3}
+\rollres{#4}{#5}
 }
 
 \usepackage{fontspec}
@@ -99,7 +102,7 @@ When you \textbf{#2}, #3}
 %%% The "real" document content comes below...
 
 \title{\scshape Mecha World\\
-	\small\bfseries An Apocolypse/Dungeon World-inspired RP System---with Mecha!}
+	\small\bfseries A PtbA RP System---with Mecha!}
 \author{by Jake Humphrey}
 \date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
