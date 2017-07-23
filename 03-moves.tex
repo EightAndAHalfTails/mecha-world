@@ -51,7 +51,7 @@ Taking someone by surprise or attacking a helpless enemy isn't Brawl; you just d
 \end{dialogue}
 
 
-\move{Lookout}{protect an ally, object or location from an enemy}{Fast}
+\move{Lookout}{protect a person, group, object or location from the enemy}{Fast}
 {hold three}
 {hold one}
 Spend your hold 1-for-1 on the following effects when your protectee comes under fire:
@@ -94,13 +94,13 @@ Spend your hold 1-for-1 on the following effects when your protectee comes under
 %\end{dialogue}
 
 
-\move{Aim}{take aim and fire with a semi-auto or single-action weapon}{Plan}
-{deal your damage to the enemy}
+\move{Aim}{take a moment to aim carefully before pulling the trigger}{Plan}
+{deal your damage to a single target}
 {deal your damage but choose one:
 \begin{itemize}
-\item You take what you can get: $-1$-harm
-\item You have to displace to get a good shot
-\item You have to empty your clip or throw another one
+\item It's only a glancing shot: $-1$-harm and they're still alive.
+\item It'll take time, the target gets to do something first.
+\item You have to take a few shots, which may hit unintended targets.
 \end{itemize}}
 
 Aiming is the most conservative method of fighing at range, as well as
@@ -108,67 +108,63 @@ how you use single-action and thrown weapons. Note this move is
 triggered even if the enemy is unaware of you. Aiming is \emph{hard},
 you know.
 
-\paragraph{Example}
-\begin{dialogue}
-  \speak{GM} Alright, Agent 0, the chance you've been waiting for is
-  here. You see through your scope the Yakuza boss you've been tailing
-  getting out of his armoured limo.
+%\paragraph{Example}
+%\begin{dialogue}
+%  \speak{GM} Alright, Agent 0, the chance you've been waiting for is
+%  here. You see through your scope the Yakuza boss you've been tailing
+%  getting out of his armoured limo.
+%
+%  \speak{Agent 0} You screwed up for the last time. I take the shot.
+%
+%  \speak{GM} Sounds like Aim to me.
+%
+%  \speak{Agent 0} 8. Well, I guess I don't need my ammo on this
+%  distant rooftop. I'll empty the clip.
+%
+%  \speak{GM} Fair enough. The gangsters begin to scatter as the sound
+%  of your rifle rings out. Your last shot meets its mark, splattering
+%  his brains across the alley, but as you scan the carnage, you notice
+%  your contact, Kensuke, was also there, and you just shot him in the
+%  leg with a stray bullet.
+%
+%  \speak{Agent 0} Oh, that's not good.
+%\end{dialogue}
 
-  \speak{Agent 0} You screwed up for the last time. I take the shot.
 
-  \speak{GM} Sounds like Aim to me.
-
-  \speak{Agent 0} 8. Well, I guess I don't need my ammo on this
-  distant rooftop. I'll empty the clip.
-
-  \speak{GM} Fair enough. The gangsters begin to scatter as the sound
-  of your rifle rings out. Your last shot meets its mark, splattering
-  his brains across the alley, but as you scan the carnage, you notice
-  your contact, Kensuke, was also there, and you just shot him in the
-  leg with a stray bullet.
-
-  \speak{Agent 0} Oh, that's not good.
-\end{dialogue}
-
-
-\move{Burst}{spray and pray with a semi- or fully-automatic weapon}{Cool}
-{deal your damage to the enemy}
-{deal your damage and choose one:
-\begin{itemize}
-\item Don't hit any unintended targets
-\item Still have ammo in the gun
-\end{itemize}}
+\move{Burst}{empty the clip and let the bullets fall where they may}{Cool}
+{deal your damage, split among any number of targets in range}
+{deal your damage, but you hit something you shouldn't have. The GM will tell you what.}
 
 You don't need to be a better shot, you just need to fire more
 bullets! Full-auto weapons are hard to control, and unless you're
-military trained, which most classes aren't, this is how you'll be
+military trained, which most people aren't, this is how you'll be
 racking up that ammo bill with them. It also goes for semi-auto
 weapons, if you feel like hurting everything in the room except you.
 
-\paragraph{Example}
-\begin{dialogue}
-  \speak{GM} Bruno, as you whizz round the corner, you suddenly come
-  face-to-face with a small platoon of guards. They seem as surprised
-  to see you as you are at them.
-
-  \speak{Bruno} Shit! I give them a taste of my assault rifle fire.
-
-  \speak{GM} Indiscriminate bullets solve everything. Roll Burst with
-  Cool, if you don't mind.
-
-  \speak{Bruno} Uhh, a 5.
-
-  \speak{GM} How cool of you. Right, either you empty your clip,
-  leaving yourself vulnerable, or you hit an explosive container that
-  will collapse this corridor, blocking passage. Or you can hit them,
-  but both of those will happen.
-
-  \speak{Bruno} Will that explosion take out the bad guys?
-
-  \speak{GM} I'm afraid your ``quick thinking'' didn't afford you time to check.
-
-  \speak{Bruno} Whoops.
-\end{dialogue}
+%\paragraph{Example}
+%\begin{dialogue}
+%  \speak{GM} Bruno, as you whizz round the corner, you suddenly come
+%  face-to-face with a small platoon of guards. They seem as surprised
+%  to see you as you are at them.
+%
+%  \speak{Bruno} Shit! I give them a taste of my assault rifle fire.
+%
+%  \speak{GM} Indiscriminate bullets solve everything. Roll Burst with
+%  Cool, if you don't mind.
+%
+%  \speak{Bruno} Uhh, a 5.
+%
+%  \speak{GM} How cool of you. Right, either you empty your clip,
+%  leaving yourself vulnerable, or you hit an explosive container that
+%  will collapse this corridor, blocking passage. Or you can hit them,
+%  but both of those will happen.
+%
+%  \speak{Bruno} Will that explosion take out the bad guys?
+%
+%  \speak{GM} I'm afraid your ``quick thinking'' didn't afford you time to check.
+%
+%  \speak{Bruno} Whoops.
+%\end{dialogue}
 
 
 %% \move{Hold Fast}{stand your ground}{Cool} % alternate name: Suffer
@@ -244,7 +240,7 @@ Ganbare! You must Persevere when the situation really doesn't look good for you.
 
 \move{Dash}{try to evade a danger or get somewhere quickly}{Fast}{you're fast enough.}{you make it, but your hesitation costs you. You leave something behind, or end up in a vulnerable spot, GM's choice.}
 
-\move{Flashback}{consult your accumulated knowledge about something}{Plan}{the GM will tell you something interesting and useful about the subject relevant to your situation.}{the GM will only tell you something interesting---it's on you to make it useful.}
+\move{Flashback}{think back to an incident in your past that's relevant to the matter at hand}{Plan}{the GM will tell you something interesting and useful about the subject relevant to your situation.}{the GM will only tell you something interesting---it's on you to make it useful.}
 
 The GM might ask you ``How do you know this?'' Tell them the truth, now.
 
@@ -325,7 +321,7 @@ Either way, take $+1$ forward when acting on the answers.
 
 For each ``yes'' answer everyone marks experience.
 
-Choose a character who knows you better than they used to. If there's
-more than one, choose one at your whim. Tell that player to add 1 to
-their Hx with you on their sheet. If this brings them to Hx$+4$, they
-reset to Hx$+1$ (and therefore mark experience).
+%Choose a character who knows you better than they used to. If there's
+%more than one, choose one at your whim. Tell that player to add 1 to
+%their Hx with you on their sheet. If this brings them to Hx$+4$, they
+%reset to Hx$+1$ (and therefore mark experience).
